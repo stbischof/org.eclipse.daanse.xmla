@@ -21,5 +21,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>model</module>
+    <module>provider</module>
   </modules>
 </project>

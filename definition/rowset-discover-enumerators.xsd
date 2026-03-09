@@ -10,8 +10,8 @@
     <xsd:sequence>
       <xsd:element name="EnumName" type="xsd:string" />
       <xsd:element name="EnumDescription" type="xsd:string" minOccurs="0" />
-      <xsd:element name="EnumType" type="xsd:string" minOccurs="0" />
-      <xsd:element name="ElementName" type="xsd:string" minOccurs="0" />
+      <xsd:element name="EnumType" type="xsd:string" />
+      <xsd:element name="ElementName" type="xsd:string"  />
       <xsd:element name="ElementDescription" type="xsd:string" minOccurs="0" />
       <xsd:element name="ElementValue" type="xsd:string" minOccurs="0" />
     </xsd:sequence>

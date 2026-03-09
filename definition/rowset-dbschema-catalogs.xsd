@@ -8,7 +8,7 @@
   <!-- DBSCHEMA_CATALOGS row definition (MS-SSAS v20251031) -->
   <xsd:complexType name="dbschema-catalogs-row">
     <xsd:sequence>
-      <xsd:element name="CATALOG_NAME" type="xsd:string" />
+      <xsd:element name="CATALOG_NAME" type="xsd:string" minOccurs="0"/>
       <xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" />
       <xsd:element name="ROLES" type="xsd:string" minOccurs="0" />
       <xsd:element name="DATE_MODIFIED" type="xsd:dateTime" minOccurs="0" />

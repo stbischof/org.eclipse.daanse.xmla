@@ -10,11 +10,11 @@
     <xsd:sequence>
       <xsd:element name="CATALOG_NAME" type="xsd:string" minOccurs="0" />
       <xsd:element name="SCHEMA_NAME" type="xsd:string" minOccurs="0" />
-      <xsd:element name="CUBE_NAME" type="xsd:string" />
+      <xsd:element name="CUBE_NAME" type="xsd:string" minOccurs="0" />
       <xsd:element name="ACTION_NAME" type="xsd:string" minOccurs="0" />
       <xsd:element name="ACTION_TYPE" type="xsd:int" minOccurs="0" />
-      <xsd:element name="COORDINATE" type="xsd:string" />
-      <xsd:element name="COORDINATE_TYPE" type="xsd:int" />
+      <xsd:element name="COORDINATE" type="xsd:string" minOccurs="0" />
+      <xsd:element name="COORDINATE_TYPE" type="xsd:int" minOccurs="0" />
       <xsd:element name="ACTION_CAPTION" type="xsd:string" minOccurs="0" />
       <xsd:element name="DESCRIPTION" type="xsd:string" minOccurs="0" />
       <xsd:element name="CONTENT" type="xsd:string" minOccurs="0" />

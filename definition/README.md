@@ -13,16 +13,15 @@ Generated from `[MS-SSAS]-251031.docx` (v20251031, October 31, 2025)
 
 ## Missing Engine Namespace Schema Files
 
-The spec v20251031 defines the following engine namespaces that have no
-corresponding XSD file in `definition/`:
+The spec v20251031 defines the following engine namespaces that have no corresponding XSD file in `definition/`:
 
 | Prefix | Namespace URI | Referenced Elements |
 |--------|--------------|---------------------|
 
 ### Recommendation
 
-Create the missing `.xsd` files and update `xmla.wsdl` to import them.
-Use `eng300_300.xsd` or `eng800.xsd` as a template.
+Create the missing `.xsd` files and update `xmla.wsdl` to import them. Use `eng300_300.xsd` or `eng800.xsd` as a
+template.
 
 ## Detailed Comparison by File
 
@@ -30,8 +29,10 @@ Use `eng300_300.xsd` or `eng800.xsd` as a template.
 
 #### Missing from definition (2)
 
-- `complexType` **Database** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `complexType` **Attach** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Attach)
+- `complexType` **Database** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Database)
+- `complexType` **Attach** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute > Command Element > Attach)
 
 #### Extra in definition (not in spec) (6)
 
@@ -48,10 +49,14 @@ Use `eng300_300.xsd` or `eng800.xsd` as a template.
 
 #### Missing from definition (4)
 
-- `complexType` **MiningStructure** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
-- `complexType` **Restore** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Restore)
-- `complexType` **Synchronize** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Synchronize)
-- `complexType` **CloneDatabase** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > CloneDatabase)
+- `complexType` **MiningStructure** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
+- `complexType` **Restore** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute > Command Element > Restore)
+- `complexType` **Synchronize** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > Synchronize)
+- `complexType` **CloneDatabase** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > CloneDatabase)
 
 #### Extra in definition (not in spec) (5)
 
@@ -67,7 +72,8 @@ Use `eng300_300.xsd` or `eng800.xsd` as a template.
 
 #### Missing from definition (1)
 
-- `complexType` **ErrorConfiguration** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > ErrorConfiguration)
+- `complexType` **ErrorConfiguration** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > ErrorConfiguration)
 
 #### Extra in definition (not in spec) (5)
 
@@ -83,16 +89,25 @@ Use `eng300_300.xsd` or `eng800.xsd` as a template.
 
 #### Missing from definition (5)
 
-- `complexType` **Dimension** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
-- `complexType` **ReferenceMeasureGroupDimension** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > ReferenceMeasureGroupDimension)
-- `complexType` **DegenerateMeasureGroupDimension** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > DegenerateMeasureGroupDimension)
-- `complexType` **ImageLoad** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > ImageLoad)
-- `complexType` **SetAuthContext** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > SetAuthContext)
+- `complexType` **Dimension** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
+- `complexType` **ReferenceMeasureGroupDimension** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup >
+  MeasureGroupDimension > ReferenceMeasureGroupDimension)
+- `complexType` **DegenerateMeasureGroupDimension** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup >
+  MeasureGroupDimension > DegenerateMeasureGroupDimension)
+- `complexType` **ImageLoad** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > ImageLoad)
+- `complexType` **SetAuthContext** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > SetAuthContext)
 
 #### Types with differences (1)
 
 ##### `complexType` **ExpressionBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > eng200_200:ExpressionBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > eng200_200:ExpressionBinding
 
 ```diff
 --- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" name="ExpressionBinding">
@@ -128,13 +143,20 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 
 #### Missing from definition (7)
 
-- `complexType` **Server** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
-- `complexType` **DataSource** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource)
-- `complexType` **Hierarchy** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy)
-- `complexType` **Partition** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
-- `simpleType` **PartitionStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
-- `simpleType` **PartitionCurrentStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
-- `complexType` **DSVTableBinding** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > DSVTableBinding)
+- `complexType` **Server** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Server)
+- `complexType` **DataSource** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > DataSource)
+- `complexType` **Hierarchy** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy)
+- `complexType` **Partition** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Partition)
+- `simpleType` **PartitionStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
+- `simpleType` **PartitionCurrentStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
+- `complexType` **DSVTableBinding** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Binding > DSVTableBinding)
 
 #### Extra in definition (not in spec) (13)
 
@@ -158,8 +180,10 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 
 #### Missing from definition (2)
 
-- `complexType` **Trace** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace)
-- `complexType` **DimensionPermission** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DimensionPermission)
+- `complexType` **Trace** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Trace)
+- `complexType` **DimensionPermission** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > DimensionPermission)
 
 #### Extra in definition (not in spec) (8)
 
@@ -178,10 +202,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 
 #### Missing from definition (4)
 
-- `complexType` **Cube** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube)
-- `simpleType` **CubeStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube)
-- `complexType` **Subscribe** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Subscribe)
-- `complexType` **Unsubscribe** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Unsubscribe)
+- `complexType` **Cube** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Cube)
+- `simpleType` **CubeStorageModeEnumType** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube)
+- `complexType` **Subscribe** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > Subscribe)
+- `complexType` **Unsubscribe** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > Unsubscribe)
 
 #### Extra in definition (not in spec) (2)
 
@@ -203,7 +231,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 #### Types with differences (1)
 
 ##### `complexType` **RemoveDiscontinuedFeatures**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > RemoveDiscontinuedFeatures
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > RemoveDiscontinuedFeatures
 
 ```diff
 --- definition/+++ spec/@@ -1,6 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RemoveDiscontinuedFeatures">
@@ -229,7 +259,9 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 #### Types with differences (2)
 
 ##### `element` **Authenticate**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate > Elements > Authenticate
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate >
+Elements > Authenticate
 
 ```diff
 --- definition/+++ spec/@@ -1,7 +1,8 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Authenticate">
@@ -245,7 +277,9 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `element` **AuthenticateResponse**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate > Elements > AuthenticateResponse
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate >
+Elements > AuthenticateResponse
 
 ```diff
 --- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AuthenticateResponse">
@@ -271,7 +305,9 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 #### Types with differences (2)
 
 ##### `element` **NormTupleSet**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > msxmla:NormTupleSet Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > msxmla:NormTupleSet Complex Type
 
 ```diff
 --- definition/+++ spec/@@ -1,14 +1,36 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" name="NormTupleSet">
@@ -279,7 +315,7 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
      <xsd:complexType>
        <xsd:sequence>
 -        <xsd:element name="NormTuples" type="NormTuplesType" minOccurs="1" maxOccurs="1"/>
-+        <xsd:element name="NormTuples" type="msxmla:NormTuplesType" 
++        <xsd:element name="NormTuples" type="msxmla:NormTuplesType"
 +                     minOccurs="1" maxOccurs="1"/>
          <xsd:element name="MembersLookup" minOccurs="1" maxOccurs="1">
            <xsd:complexType>
@@ -301,9 +337,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 +            <xsd:element name="MemberRef" minOccurs="0" maxOccurs="unbounded">
 +              <xsd:complexType>
 +                <xsd:sequence>
-+                  <xsd:element name="MemberOrdinal" type="xsd:int" 
++                  <xsd:element name="MemberOrdinal" type="xsd:int"
 +                               minOccurs="1" maxOccurs="1"/>
-+                  <xsd:element name="MemberDispInfo" type="xsd:int" 
++                  <xsd:element name="MemberDispInfo" type="xsd:int"
 +                               minOccurs="0" maxOccurs="1"/>
 +                </xsd:sequence>
 +              </xsd:complexType>
@@ -316,14 +352,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **NormTuplesType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > msxmla:NormTupleSet Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > msxmla:NormTupleSet Complex Type
 
 ```diff
 --- definition/+++ spec/@@ -1,4 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" name="NormTuplesType">
 +<xsd:element name="NormTupleSet">
 +    <xsd:complexType>
 +      <xsd:sequence>
-+        <xsd:element name="NormTuples" type="msxmla:NormTuplesType" 
++        <xsd:element name="NormTuples" type="msxmla:NormTuplesType"
 +                     minOccurs="1" maxOccurs="1"/>
 +        <xsd:element name="MembersLookup" minOccurs="1" maxOccurs="1">
 +          <xsd:complexType>
@@ -345,9 +383,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
                  <xsd:sequence>
 -                  <xsd:element name="MemberOrdinal" type="xsd:int" minOccurs="1" maxOccurs="1"/>
 -                  <xsd:element name="MemberDispInfo" type="xsd:int" minOccurs="0" maxOccurs="1"/>
-+                  <xsd:element name="MemberOrdinal" type="xsd:int" 
++                  <xsd:element name="MemberOrdinal" type="xsd:int"
 +                               minOccurs="1" maxOccurs="1"/>
-+                  <xsd:element name="MemberDispInfo" type="xsd:int" 
++                  <xsd:element name="MemberDispInfo" type="xsd:int"
 +                               minOccurs="0" maxOccurs="1"/>
                  </xsd:sequence>
                </xsd:complexType>
@@ -361,16 +399,22 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 
 #### Missing from definition (2)
 
-- `element` **LastSchemaUpdate** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube)
-- `element` **LastDataUpdate** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube)
+- `element` **LastSchemaUpdate** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types >
+  xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube)
+- `element` **LastDataUpdate** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types >
+  xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube)
 
 #### Types with differences (27)
 
 ##### `complexType` **mddataset**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="mddataset">
+--- definition/+++ spec/@@ -1,10 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="mddataset">
 +<xsd:complexType name="mddataset" >
      <xsd:sequence>
 -      <xsd:element ref="xsd:schema" minOccurs="0"/>
@@ -390,10 +434,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **OlapInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="OlapInfo">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="OlapInfo">
 +<xsd:complexType name="OlapInfo">
      <xsd:sequence>
 -      <xsd:element name="CubeInfo" type="CubeInfo"/>
@@ -407,10 +455,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **CubeInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CubeInfo">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CubeInfo">
 -    <xsd:sequence>
 -      <xsd:element name="Cube" maxOccurs="unbounded" type="OlapInfoCube"/>
 -    </xsd:sequence>
@@ -422,10 +474,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **OlapInfoCube**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CubeInfo > OlapInfoCube
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="OlapInfoCube">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="OlapInfoCube">
 +<xsd:complexType name="OlapInfoCube" >
      <xsd:sequence>
 -      <xsd:element name="CubeName" type="xsd:string"/>
@@ -439,10 +495,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **AxesInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="AxesInfo">
+--- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="AxesInfo">
 +<xsd:complexType name="AxesInfo">
      <xsd:sequence>
 -      <xsd:element name="AxisInfo" maxOccurs="unbounded" type="AxisInfo"/>
@@ -453,10 +513,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **AxisInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo > xmla-ds:AxisInfo Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo > xmla-ds:AxisInfo Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="AxisInfo">
+--- definition/+++ spec/@@ -1,6 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="AxisInfo">
 +<xsd:complexType name="AxisInfo">
      <xsd:sequence>
 -      <xsd:element name="HierarchyInfo" type="HierarchyInfo" minOccurs="0" maxOccurs="unbounded"/>
@@ -469,10 +533,15 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **HierarchyInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo > xmla-ds:AxisInfo Complex Type > xmla-ds:HierarchyInfo Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:AxesInfo > xmla-ds:AxisInfo Complex Type > xmla-ds:HierarchyInfo Complex
+Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="HierarchyInfo">
+--- definition/+++ spec/@@ -1,6 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="HierarchyInfo">
 +<xsd:complexType name="HierarchyInfo">
      <xsd:sequence>
 -      <xsd:any namespace="##targetNamespace" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
@@ -485,10 +554,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **CellInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CellInfo Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:OlapInfo Complex Type > xmla-ds:CellInfo Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellInfo">
+--- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellInfo">
 -    <xsd:sequence>
 -      <xsd:any namespace="##targetNamespace" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
 -    </xsd:sequence>
@@ -501,10 +574,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **Axes**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="Axes">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="Axes">
 +<xsd:complexType name="Axes">
      <xsd:sequence>
 -      <xsd:element name="Axis" type="Axis" maxOccurs="unbounded"/>
@@ -514,10 +591,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `group` **SetType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group
 
 ```diff
---- definition/+++ spec/@@ -1,13 +1,13 @@-<xsd:group xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="SetType">
+--- definition/+++ spec/@@ -1,13 +1,13 @@-<xsd:group xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="SetType">
 -    <xsd:choice>
 -      <xsd:element name="Members" type="MembersType"/>
 -      <xsd:element name="Tuples" type="TuplesType"/>
@@ -545,10 +626,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **MembersType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > MembersType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > MembersType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MembersType">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MembersType">
 -    <xsd:sequence>
 -      <xsd:element name="Member" type="MemberType" minOccurs="0" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -562,10 +647,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **MemberType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > MemberType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > MemberType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MemberType">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MemberType">
 -    <xsd:sequence>
 -      <xsd:any namespace="##targetNamespace" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
 -    </xsd:sequence>
@@ -579,10 +668,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **TuplesType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > TupleType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > TupleType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TuplesType">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TuplesType">
 -    <xsd:sequence>
 -      <xsd:element name="Tuple" type="TupleType" minOccurs="0" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -594,10 +687,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **TupleType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > TupleType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > TupleType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TupleType">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TupleType">
 -    <xsd:sequence>
 -      <xsd:element name="Member" type="MemberType" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -609,10 +706,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **SetListType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > SetListType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > SetType Model Group > SetListType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="SetListType">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="SetListType">
 -    <xsd:group ref="SetType" minOccurs="0" maxOccurs="unbounded"/>
 -    <xsd:attribute name="Size" type="xsd:unsignedInt"/>
 -  </xsd:complexType>+<xsd:complexType name="SetListType">
@@ -622,17 +723,26 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `element` **Members**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="Members" type="TupleType"/>+<xsd:element name="Members" type="TupleType"/>
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine"
+name="Members" type="TupleType"/>+<xsd:element name="Members" type="TupleType"/>
 ```
 
 ##### `group` **NormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,9 @@-<xsd:group xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="NormType">
+--- definition/+++ spec/@@ -1,8 +1,9 @@-<xsd:group xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla"
+xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="NormType">
 -    <xsd:sequence>
 -      <xsd:element name="MetadataSet" type="MetadatasType" minOccurs="1"/>
 -      <xsd:element name="TupleSet" type="TuplesNormType" minOccurs="1"/>
@@ -644,17 +754,20 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 +    <xsd:element name="MetadataSet" type="MetadatasType" minOccurs="1" />
 +    <xsd:element name="TupleSet" type="TuplesNormType" minOccurs="1" />
 +    <xsd:element name="KeySet" type="KeysNormType" minOccurs="1" />
-+    <xsd:element name="MeasureFormatStringSet" type="MeasureFormatStringsNormType" 
++    <xsd:element name="MeasureFormatStringSet" type="MeasureFormatStringsNormType"
 +                 minOccurs="0" />
 +  </xsd:sequence>
 +</xsd:group>
 ```
 
 ##### `complexType` **MetadatasType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MetadataType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MetadataType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MetadatasType">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MetadatasType">
 -    <xsd:sequence>
 -      <xsd:element name="Metadata" type="MetadataType" minOccurs="0" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -666,10 +779,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **MetadataType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MetadataType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MetadataType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MetadataType">
+--- definition/+++ spec/@@ -1,10 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MetadataType">
 -    <xsd:sequence>
 -      <xsd:element name="HierUName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 -      <xsd:element name="HierFlags" type="xsd:int" minOccurs="1" maxOccurs="1"/>
@@ -691,10 +807,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **TuplesNormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > TuplesNormType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > TuplesNormType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TuplesNormType">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="TuplesNormType">
 -    <xsd:sequence>
 -      <xsd:element name="TupleCount" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
 -      <xsd:element name="Data" type="xsd:base64Binary" minOccurs="1" maxOccurs="1"/>
@@ -708,10 +827,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **KeysNormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > KeyNormType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > KeyNormType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="KeysNormType">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="KeysNormType">
 -    <xsd:sequence>
 -      <xsd:element name="KeySet" type="KeyNormType" minOccurs="1" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -723,10 +845,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **KeyNormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > KeyNormType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > KeyNormType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="KeyNormType">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="KeyNormType">
 -    <xsd:sequence>
 -      <xsd:element name="DistinctCountMember" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 -      <xsd:element name="Data" type="xsd:base64Binary" minOccurs="0" maxOccurs="unbounded"/>
@@ -740,26 +865,32 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **MeasureFormatStringsNormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MeasureFormatStringNormType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MeasureFormatStringNormType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MeasureFormatStringsNormType">
+--- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MeasureFormatStringsNormType">
 -    <xsd:sequence>
 -      <xsd:element name="MeasureFormatStringSet" type="MeasureFormatStringNormType" minOccurs="0" maxOccurs="unbounded"/>
 -    </xsd:sequence>
 -  </xsd:complexType>+<xsd:complexType name="MeasureFormatStringsNormType">
 +  <xsd:sequence>
-+    <xsd:element name="MeasureFormatStringSet" type="MeasureFormatStringNormType" 
++    <xsd:element name="MeasureFormatStringSet" type="MeasureFormatStringNormType"
 +                 minOccurs="0" maxOccurs="unbounded" />
 +  </xsd:sequence>
 +</xsd:complexType>
 ```
 
 ##### `complexType` **MeasureFormatStringNormType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MeasureFormatStringNormType Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:Axes Complex Type > Axis > NormType Model Group > MeasureFormatStringNormType Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MeasureFormatStringNormType">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="MeasureFormatStringNormType">
 -    <xsd:sequence>
 -      <xsd:element name="DistinctMemberCount" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
 -      <xsd:element name="Data" type="xsd:base64Binary" minOccurs="1" maxOccurs="unbounded"/>
@@ -773,10 +904,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **CellData**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:CellData Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:CellData Complex Type
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellData">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellData">
 -    <xsd:sequence>
 -      <xsd:element name="Cell" type="CellType" minOccurs="0" maxOccurs="unbounded"/>
 -      <xsd:element name="CellSet" type="CellSetType" minOccurs="0" maxOccurs="1"/>
@@ -790,10 +924,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **CellType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:CellData Complex Type > xmla-ds:CellType ComplexType
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:CellData Complex Type > xmla-ds:CellType ComplexType
 
 ```diff
---- definition/+++ spec/@@ -1,13 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellType">
+--- definition/+++ spec/@@ -1,13 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellType">
 -    <xsd:sequence>
 -      <xsd:element name="Value" minOccurs="0" maxOccurs="1">
 -        <xsd:complexType>
@@ -818,7 +955,7 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 +        </xsd:sequence>
 +      </xsd:complexType>
 +    </xsd:element>
-+    <xsd:any namespace="##targetNamespace" minOccurs="0" 
++    <xsd:any namespace="##targetNamespace" minOccurs="0"
 +             maxOccurs="unbounded" processContents="skip" />
 +  </xsd:sequence>
 +  <xsd:attribute name="CellOrdinal" type="xsd:unsignedInt" use="required" />
@@ -826,10 +963,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **CellSetType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex Type > xmla-ds:CellData Complex Type > CellSetType ComplexType
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-ds:mddataset Complex
+Type > xmla-ds:CellData Complex Type > CellSetType ComplexType
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellSetType">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception"
+    xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" name="CellSetType">
 -    <xsd:sequence>
 -      <xsd:element name="Data" type="xsd:base64Binary" minOccurs="1" maxOccurs="unbounded"/>
 -    </xsd:sequence>
@@ -853,7 +993,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 #### Types with differences (1)
 
 ##### `complexType` **emptyresult**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-e:emptyresult Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-e:emptyresult
+Complex Type
 
 ```diff
 --- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="emptyresult">
@@ -877,7 +1019,8 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 
 #### Missing from definition (1)
 
-- `complexType` **results** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-m:results Complex Type)
+- `complexType` **results** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types >
+  xmla-m:results Complex Type)
 
 #### Extra in definition (not in spec) (1)
 
@@ -890,7 +1033,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 #### Types with differences (2)
 
 ##### `complexType` **rowset**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-rs:rowset Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-rs:rowset Complex
+Type
 
 ```diff
 --- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="rowset">
@@ -909,7 +1054,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **row**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-rs:rowset Complex Type > xmla-rs:row Complex Type
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > xmla-rs:rowset Complex
+Type > xmla-rs:row Complex Type
 
 ```diff
 --- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="row">
@@ -931,14 +1078,19 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 
 #### Missing from definition (3)
 
-- `element` **WarningColumn** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
-- `element` **WarningMeasure** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
-- `complexType` **WarningLocationObject** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
+- `element` **WarningColumn** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types >
+  Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
+- `element` **WarningMeasure** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex Types >
+  Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
+- `complexType` **WarningLocationObject** (spec: Messages > Common Message Syntax > Complex Types > Return Value Complex
+  Types > Error and Warning Complex Types > xmla-x:Messages > MessageLocation)
 
 #### Types with differences (5)
 
 ##### `complexType` **Exception**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex
+Types > xmla-x:Messages
 
 ```diff
 --- definition/+++ spec/@@ -1,3 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" name="Exception">
@@ -950,7 +1102,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **Messages**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex
+Types > xmla-x:Messages
 
 ```diff
 --- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" name="Messages">
@@ -965,7 +1119,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **WarningType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > WarningType
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex
+Types > xmla-x:Messages > WarningType
 
 ```diff
 --- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" name="WarningType">
@@ -986,7 +1142,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **ErrorType**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > ErrorType
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex
+Types > xmla-x:Messages > ErrorType
 
 ```diff
 --- definition/+++ spec/@@ -1,10 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" name="ErrorType">
@@ -1009,7 +1167,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 ```
 
 ##### `complexType` **MessageLocation**
-Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex Types > xmla-x:Messages > MessageLocation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Return Value Complex Types > Error and Warning Complex
+Types > xmla-x:Messages > MessageLocation
 
 ```diff
 --- definition/+++ spec/@@ -1,25 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis:exception" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" name="MessageLocation">
@@ -1044,9 +1204,9 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 -      <xsd:element name="RowNumber" type="xsd:int" minOccurs="0" maxOccurs="1"/>
 +      <xsd:element name ="LineOffset" type="xsd:int" minOccurs="0" maxOccurs="1"/>
 +      <xsd:element name ="TextLength" type="xsd:int" minOccurs="0" maxOccurs="1"/>
-+      <xsd:element name ="SourceObject" type="eng200:WarningLocationObject" minOccurs="0" 
++      <xsd:element name ="SourceObject" type="eng200:WarningLocationObject" minOccurs="0"
 +                   maxOccurs="1"/>
-+      <xsd:element name ="DependsOnObject" type="eng200:WarningLocationObject" minOccurs="0" 
++      <xsd:element name ="DependsOnObject" type="eng200:WarningLocationObject" minOccurs="0"
 +                   maxOccurs="1"/>
 +      <xsd:element name ="RowNumber" type="xsd:int" minOccurs="0" maxOccurs="1"/>
      </xsd:all>
@@ -1060,10 +1220,22 @@ Spec location: Messages > Common Message Syntax > Complex Types > Return Value C
 #### Types with differences (9)
 
 ##### `wsdl:operation` **Authenticate**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate > Messages
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate >
+Messages
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Authenticate">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Authenticate">
 -      <wsdl:input message="AuthenticateSoapIn"/>
 -      <wsdl:output message="AuthenticateSoapOut"/>
 -    </wsdl:operation>+<wsdl:operation name="Authenticate">
@@ -1073,10 +1245,22 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **AuthenticateSoapIn**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate > Messages > AuthenticateSoapOut
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate >
+Messages > AuthenticateSoapOut
 
 ```diff
---- definition/+++ spec/@@ -1,3 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="AuthenticateSoapIn">
+--- definition/+++ spec/@@ -1,3 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="AuthenticateSoapIn">
 -    <wsdl:part name="parameters" element="ext:Authenticate"/>
 -  </wsdl:message>+<message name="AuthenticateSoapIn">
 +  <part name="parameters" element="xmla:Authenticate" />
@@ -1084,10 +1268,22 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **AuthenticateSoapOut**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate > Elements
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Authenticate >
+Elements
 
 ```diff
---- definition/+++ spec/@@ -1,3 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="AuthenticateSoapOut">
+--- definition/+++ spec/@@ -1,3 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="AuthenticateSoapOut">
 -    <wsdl:part name="parameters" element="ext:AuthenticateResponse"/>
 -  </wsdl:message>+<message name="AuthenticateSoapOut">
 +  <part name="parameters" element="xmla:AuthenticateResponse" />
@@ -1095,10 +1291,21 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:operation` **Discover**
+
 Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Discover">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Discover">
 -      <wsdl:input message="DiscoverSoapIn" name="DiscoverSoapIn"/>
 -      <wsdl:output message="DiscoverSoapOut"/>
 -    </wsdl:operation>+<wsdl:operation name="Discover">
@@ -1108,10 +1315,22 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **DiscoverSoapIn**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Messages > DiscoverSoapOut
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover >
+Messages > DiscoverSoapOut
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="DiscoverSoapIn">
+--- definition/+++ spec/@@ -1,6 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="DiscoverSoapIn">
 -    <wsdl:part name="parameters" element="ana:Discover"/>
 -    <wsdl:part name="Session" element="ana:Session"/>
 -    <wsdl:part name="BeginSession" element="ana:BeginSession"/>
@@ -1122,10 +1341,21 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **DiscoverSoapOut**
+
 Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="DiscoverSoapOut">
+--- definition/+++ spec/@@ -1,4 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="DiscoverSoapOut">
 -    <wsdl:part name="parameters" element="ana:DiscoverResponse"/>
 -    <wsdl:part name="Session" element="ana:Session"/>
 -  </wsdl:message>+<message name="DiscoverSoapOut">
@@ -1134,10 +1364,21 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:operation` **Execute**
+
 Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Execute">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<wsdl:operation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="Execute">
 -      <wsdl:input message="ExecuteSoapIn"/>
 -      <wsdl:output message="ExecuteSoapOut"/>
 -    </wsdl:operation>+<wsdl:operation name="Execute">
@@ -1147,10 +1388,22 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **ExecuteSoapIn**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Messages > ExecuteSoapOut
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Messages >
+ExecuteSoapOut
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="ExecuteSoapIn">
+--- definition/+++ spec/@@ -1,6 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="ExecuteSoapIn">
 -    <wsdl:part name="parameters" element="ana:Execute"/>
 -    <wsdl:part name="Session" element="ana:Session"/>
 -    <wsdl:part name="BeginSession" element="ana:BeginSession"/>
@@ -1161,10 +1414,21 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `wsdl:message` **ExecuteSoapOut**
+
 Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext" xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910" xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="ExecuteSoapOut">
+--- definition/+++ spec/@@ -1,4 +1,3 @@-<wsdl:message xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="urn:daanse-eclipse-org:xmla-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ana="urn:schemas-microsoft-com:xml-analysis" xmlns:ext="http://schemas.microsoft.com/analysisservices/2003/ext"
+    xmlns:msxmla="http://schemas.microsoft.com/analysisservices/2003/xmla" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:eng500="http://schemas.microsoft.com/analysisservices/2013/engine/500"
+    xmlns:eng500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng600_600="http://schemas.microsoft.com/analysisservices/2013/engine/600/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800"
+    xmlns:eng800_800="http://schemas.microsoft.com/analysisservices/2013/engine/800/800" xmlns:eng900="http://schemas.microsoft.com/analysisservices/2022/engine/900" xmlns:eng900_900="http://schemas.microsoft.com/analysisservices/2022/engine/900/900" xmlns:eng910="http://schemas.microsoft.com/analysisservices/2022/engine/910"
+    xmlns:eng910_910="http://schemas.microsoft.com/analysisservices/2022/engine/910/910" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng920_920="http://schemas.microsoft.com/analysisservices/2022/engine/920/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng921_921="http://schemas.microsoft.com/analysisservices/2022/engine/921/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng922_922="http://schemas.microsoft.com/analysisservices/2022/engine/922/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923"
+    xmlns:eng923_923="http://schemas.microsoft.com/analysisservices/2025/engine/923/923" xmlns:eng924="http://schemas.microsoft.com/analysisservices/2025/engine/924" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:eng925_925="http://schemas.microsoft.com/analysisservices/2025/engine/925/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+    xmlns:ana-x="urn:schemas-microsoft-com:xml-analysis:exception" name="ExecuteSoapOut">
 -    <wsdl:part name="parameters" element="ana:ExecuteResponse"/>
 -    <wsdl:part name="Session" element="ana:Session"/>
 -  </wsdl:message>+<message name="ExecuteSoapOut">
@@ -1178,246 +1442,489 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 
 #### Missing from definition (232)
 
-- `element` **DefaultCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
-- `element` **SupportedCompatibilityLevels** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
-- `element` **SupportsNewMetadataVersioning** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
-- `element` **XEvent** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace)
-- `element` **ReadWriteMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **DbStorageLocation** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **CompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **StorageEngineUsed** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **ImagePath** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **ImageUrl** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **ImageUniqueID** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **ImageVersion** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **Token** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **DirectQueryMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **UseCryptoNextGen** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **CryptKeyCreationTS** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **UnicodeCharacterBehavior** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
-- `element` **QueryImpersonationInfo** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource)
-- `element` **QueryHints** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource)
-- `element` **ProcessingRecommendation** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
-- `element` **StringStoresCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
-- `element` **CurrentStringStoresCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
-- `complexType` **Relationships** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
-- `complexType` **DimensionAttributeVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > DimensionAttribute > DimensionAttributeVisualizationProperties)
-- `element` **MemberKeysUnique** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy)
-- `complexType` **HierarchyVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy > HierarchyVisualizationProperties)
-- `element` **ProcessingState** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy > HierarchyVisualizationProperties)
-- `complexType` **Relationship** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
-- `complexType` **RelationshipEnd** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
-- `complexType` **RelationshipEndTranslation** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
-- `complexType` **RelationshipEndVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
-- `element` **DaxOptimizationMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube)
-- `complexType` **CalculationPropertiesVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MdxScript > CalculationPropertiesVisualizationProperties)
-- `element` **ProcessingState** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > ReferenceMeasureGroupDimension)
-- `element` **DirectQueryUsage** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition)
-- `element` **HoldoutMaxPercent** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
-- `element` **HoldoutMaxCases** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
-- `element` **HoldoutSeed** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
-- `element` **HoldoutActualSize** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
-- `complexType` **RowNumberBinding** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > CalculatedMeasureBinding)
-- `element` **CalculationError** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > ErrorConfiguration)
-- `complexType` **ImpersonationInfo** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > ImpersonationInfo)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_TABLES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_TABLES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_CUBES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_PROPERTIES > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_PROPERTIES > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_ACTIONS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_ACTIONS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_SETS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_SETS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_FUNCTIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_FUNCTIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LITERALS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LITERALS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_SCHEMA_ROWSETS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_SCHEMA_ROWSETS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DATASOURCES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DATASOURCES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_ENUMERATORS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_ENUMERATORS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_DEFINITION_PROVIDERINFO)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_DEFINITION_PROVIDERINFO)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_COLUMNS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_EVENT_CATEGORIES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_EVENT_CATEGORIES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYUSAGE)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYUSAGE)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYGRANT)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYGRANT)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_SESSIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_SESSIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_CONNECTIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_CONNECTIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MASTER_KEY)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_MASTER_KEY)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PERFORMANCE_COUNTERS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PERFORMANCE_COUNTERS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PARTITION_STAT)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_PARTITION_STAT)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DIMENSION_STAT)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DIMENSION_STAT)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMANDS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMANDS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMAND_OBJECTS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMAND_OBJECTS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_ACTIVITY)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_ACTIVITY)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_MEMORY_USAGE)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_MEMORY_USAGE)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMNS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CALC_DEPENDENCY > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_PACKAGES)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_PACKAGES)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > DiscoverResponse)
-- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > DiscoverResponse)
-- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > DiscoverResponse)
-- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > DiscoverResponse)
-- `complexType` **Execute** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute)
-- `element` **DbStorageLocation** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Synchronize)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > CloneDatabase)
-- `element` **DbStorageLocation** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > CloneDatabase)
-- `complexType` **Export** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Export)
-- `element` **Parameters** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Parameters > ExecuteParameter)
-- `complexType` **ExecuteResponse** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse > return Element)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse > return Element)
-- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse > return Element)
-- `element` **results** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse > return Element)
+- `element` **DefaultCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
+- `element` **SupportedCompatibilityLevels** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
+- `element` **SupportsNewMetadataVersioning** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server)
+- `element` **XEvent** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Trace)
+- `element` **ReadWriteMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **DbStorageLocation** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **CompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **StorageEngineUsed** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **ImagePath** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **ImageUrl** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **ImageUniqueID** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **ImageVersion** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **Token** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **DirectQueryMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **UseCryptoNextGen** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **CryptKeyCreationTS** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **UnicodeCharacterBehavior** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > Database)
+- `element` **QueryImpersonationInfo** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource)
+- `element` **QueryHints** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > DataSource)
+- `element` **ProcessingRecommendation** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
+- `element` **StringStoresCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
+- `element` **CurrentStringStoresCompatibilityLevel** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
+- `complexType` **Relationships** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension)
+- `complexType` **DimensionAttributeVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types >
+  Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension >
+  DimensionAttribute > DimensionAttributeVisualizationProperties)
+- `element` **MemberKeysUnique** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy)
+- `complexType` **HierarchyVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy >
+  HierarchyVisualizationProperties)
+- `element` **ProcessingState** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy >
+  HierarchyVisualizationProperties)
+- `complexType` **Relationship** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
+- `complexType` **RelationshipEnd** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
+- `complexType` **RelationshipEndTranslation** (spec: Messages > Common Message Syntax > Complex Types > Object
+  Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
+- `complexType` **RelationshipEndVisualizationProperties** (spec: Messages > Common Message Syntax > Complex Types >
+  Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship)
+- `element` **DaxOptimizationMode** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Cube)
+- `complexType` **CalculationPropertiesVisualizationProperties** (spec: Messages > Common Message Syntax > Complex
+  Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MdxScript >
+  CalculationPropertiesVisualizationProperties)
+- `element` **ProcessingState** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension >
+  ReferenceMeasureGroupDimension)
+- `element` **DirectQueryUsage** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Partition)
+- `element` **HoldoutMaxPercent** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
+- `element` **HoldoutMaxCases** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
+- `element` **HoldoutSeed** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types >
+  Complex Type Definitions for Server Object Hierarchy > MiningStructure)
+- `element` **HoldoutActualSize** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure)
+- `complexType` **RowNumberBinding** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > Binding > CalculatedMeasureBinding)
+- `element` **CalculationError** (spec: Messages > Common Message Syntax > Complex Types > Object Definition Complex
+  Types > Complex Type Definitions for Server Object Hierarchy > ErrorConfiguration)
+- `complexType` **ImpersonationInfo** (spec: Messages > Common Message Syntax > Complex Types > Object Definition
+  Complex Types > Complex Type Definitions for Server Object Hierarchy > ImpersonationInfo)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_TABLES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_TABLES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DBSCHEMA_PROVIDER_TYPES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_CUBES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_DIMENSIONS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_HIERARCHIES > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_LEVELS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASURES > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_PROPERTIES > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_PROPERTIES > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEMBERS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_ACTIONS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_ACTIONS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_SETS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_SETS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_KPIS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > MDSCHEMA_MEASUREGROUP_DIMENSIONS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_SERVICE_PARAMETERS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_FUNCTIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_FUNCTIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODEL_CONTENT_PMML)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_MODELS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DMSCHEMA_MINING_STRUCTURE_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PROPERTIES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LITERALS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LITERALS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_SCHEMA_ROWSETS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_SCHEMA_ROWSETS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_KEYWORDS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DATASOURCES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DATASOURCES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_ENUMERATORS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_ENUMERATORS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XML_METADATA > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_DEFINITION_PROVIDERINFO)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_DEFINITION_PROVIDERINFO)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_COLUMNS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_EVENT_CATEGORIES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_TRACE_EVENT_CATEGORIES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYUSAGE)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYUSAGE)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYGRANT)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MEMORYGRANT)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCKS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_SESSIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_SESSIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_JOBS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_CONNECTIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_CONNECTIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MASTER_KEY)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_MASTER_KEY)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PERFORMANCE_COUNTERS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PERFORMANCE_COUNTERS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_LOCATIONS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PARTITION_STAT)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_PARTITION_STAT)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DIMENSION_STAT)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DIMENSION_STAT)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMANDS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMANDS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMAND_OBJECTS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_COMMAND_OBJECTS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_ACTIVITY)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_ACTIVITY)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_MEMORY_USAGE)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_MEMORY_USAGE)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMNS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CSDL_METADATA > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_CALC_DEPENDENCY > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_RING_BUFFERS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_PACKAGES)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_PACKAGES)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECTS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_OBJECT_COLUMNS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSIONS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_XEVENT_SESSION_TARGETS > Additional Restrictions)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_DB_MEM_STATS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > Discover > Discover Request Types > DISCOVER_OBJECT_COUNTERS)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > DiscoverResponse)
+- `simpleType` **uuid** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > DiscoverResponse)
+- `complexType` **xmlDocument** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Discover > Elements > DiscoverResponse)
+- `complexType` **row** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Discover > Elements > DiscoverResponse)
+- `complexType` **Execute** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute)
+- `element` **DbStorageLocation** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > Synchronize)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute > Command Element > CloneDatabase)
+- `element` **DbStorageLocation** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > Execute > Command Element > CloneDatabase)
+- `complexType` **Export** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute > Command Element > Export)
+- `element` **Parameters** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > Execute > Parameters > ExecuteParameter)
+- `complexType` **ExecuteResponse** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing
+  Rules > Execute > Elements > ExecuteResponse)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > ExecuteResponse > return Element)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > ExecuteResponse > return Element)
+- `element` **root** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > ExecuteResponse > return Element)
+- `element` **results** (spec: Protocol Details > Server Details > Message Processing Events and Sequencing Rules >
+  Execute > Elements > ExecuteResponse > return Element)
 
 #### Types with differences (173)
 
 ##### `complexType` **MajorObject**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MajorObject
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MajorObject
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MajorObject">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MajorObject">
 +<xsd:complexType name="MajorObject">
      <xsd:choice>
        <xsd:element name="AggregationDesign" type="AggregationDesign"/>
@@ -1426,10 +1933,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ServerProperty**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Server > ServerProperty
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Server > ServerProperty
 
 ```diff
---- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ServerProperty">
+--- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ServerProperty">
 +<xsd:complexType name="ServerProperty" >
      <xsd:all>
 -      <xsd:element name="Name" type="xsd:string"/>
@@ -1450,10 +1963,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Assembly**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Assembly
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Assembly
 
 ```diff
---- definition/+++ spec/@@ -1,19 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Assembly" abstract="true">
+--- definition/+++ spec/@@ -1,19 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Assembly" abstract="true">
 +<xsd:complexType name="Assembly" abstract="true" >
      <xsd:sequence>
 -      <!--These elements are common to each MajorObject -->
@@ -1488,10 +2007,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ComAssembly**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Assembly > ComAssembly
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Assembly > ComAssembly
 
 ```diff
---- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ComAssembly">
+--- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ComAssembly">
 +<xsd:complexType name="ComAssembly">
      <xsd:complexContent>
        <xsd:extension base="Assembly">
@@ -1505,10 +2030,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ClrAssembly**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Assembly > ClrAssembly
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Assembly > ClrAssembly
 
 ```diff
---- definition/+++ spec/@@ -1,11 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClrAssembly">
+--- definition/+++ spec/@@ -1,11 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClrAssembly">
 +<xsd:complexType name="ClrAssembly">
      <xsd:complexContent>
 -      <xsd:extension base="Assembly">
@@ -1519,7 +2050,7 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
              <xsd:complexType>
                <xsd:sequence>
 -                <xsd:element name="File" type="ClrAssemblyFile" maxOccurs="unbounded"/>
-+                <xsd:element name="File"  type="ClrAssemblyFile" 
++                <xsd:element name="File"  type="ClrAssemblyFile"
 +                             maxOccurs="unbounded" />
                </xsd:sequence>
              </xsd:complexType>
@@ -1528,10 +2059,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ClrAssemblyFile**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Assembly > ClrAssembly > ClrAssemblyFile
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Assembly > ClrAssembly > ClrAssemblyFile
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,15 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClrAssemblyFile">
+--- definition/+++ spec/@@ -1,15 +1,15 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClrAssemblyFile">
 +<xsd:complexType name="ClrAssemblyFile">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -1556,10 +2093,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataBlock**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Assembly > ClrAssembly > DataBlock
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Assembly > ClrAssembly > DataBlock
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataBlock">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataBlock">
 +<xsd:complexType name="DataBlock">
      <xsd:sequence>
 -      <xsd:element name="Block" type="xsd:base64Binary" minOccurs="0" maxOccurs="unbounded"/>
@@ -1569,10 +2112,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Event**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > Event
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > Event
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Event">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Event">
 +<xsd:complexType name="Event">
      <xsd:all>
        <xsd:element name="EventID" type="xsd:string"/>
@@ -1581,10 +2130,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **EventColumnID**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > Event > EventColumnID
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > Event > EventColumnID
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EventColumnID">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EventColumnID">
 +<xsd:complexType name="EventColumnID">
      <xsd:sequence>
 -      <xsd:element name="ColumnID" type="xsd:string" maxOccurs="unbounded"/>
@@ -1594,10 +2149,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TraceFilter**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > event_session
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > event_session
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TraceFilter">
+--- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TraceFilter">
 +<xsd:complexType name="TraceFilter" >
      <xsd:choice minOccurs="1" maxOccurs="1">
 -      <xsd:element name="Not" type="not_type" minOccurs="0"/>
@@ -1663,10 +2224,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **not_type**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > event_session
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > event_session
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="not_type">
+--- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="not_type">
 +<xsd:complexType name="TraceFilter" >
 +    <xsd:choice minOccurs="1" maxOccurs="1">
 +      <xsd:element name="Not" type="not_type" minOccurs="0" />
@@ -1732,10 +2299,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **and_or_type**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > event_session
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > event_session
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="and_or_type">
+--- definition/+++ spec/@@ -1,15 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="and_or_type">
 +<xsd:complexType name="TraceFilter" >
 +    <xsd:choice minOccurs="1" maxOccurs="1">
 +      <xsd:element name="Not" type="not_type" minOccurs="0" />
@@ -1801,10 +2374,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **bool_binop**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Trace > event_session
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Trace > event_session
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="bool_binop">
+--- definition/+++ spec/@@ -1,6 +1,51 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="bool_binop">
 +<xsd:complexType name="TraceFilter" >
 +    <xsd:choice minOccurs="1" maxOccurs="1">
 +      <xsd:element name="Not" type="not_type" minOccurs="0" />
@@ -1860,10 +2439,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Account**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Database > Account
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Database > Account
 
 ```diff
---- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Account">
+--- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Account">
 +<xsd:complexType name="Account">
      <xsd:all>
 -      <xsd:element name="AccountType" type="xsd:string"/>
@@ -1920,10 +2505,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **RelationalDataSource**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource > OlapDataSource
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataSource > OlapDataSource
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RelationalDataSource">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RelationalDataSource">
 +<xsd:complexType name="RelationalDataSource" >
      <xsd:complexContent>
 -      <xsd:extension base="DataSource"/>
@@ -1933,10 +2524,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **OlapDataSource**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource > PushedDataSource
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataSource > PushedDataSource
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="OlapDataSource">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="OlapDataSource">
 +<xsd:complexType name="OlapDataSource" >
      <xsd:complexContent>
 -      <xsd:extension base="DataSource"/>
@@ -1946,10 +2543,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PushedDataSource**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSource > PushedDataSource
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataSource > PushedDataSource
 
 ```diff
---- definition/+++ spec/@@ -1,22 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PushedDataSource">
+--- definition/+++ spec/@@ -1,22 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PushedDataSource">
 +<xsd:complexType name="PushedDataSource" >
      <xsd:all>
        <xsd:element name="root">
@@ -1981,10 +2584,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataSourceView**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSourceView
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataSourceView
 
 ```diff
---- definition/+++ spec/@@ -1,19 +1,31 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourceView">
+--- definition/+++ spec/@@ -1,19 +1,31 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourceView">
 +<xsd:complexType name="DataSourceView">
 +    <xsd:complexContent>
 +    <xsd:extension base="MajorObject">
@@ -2028,10 +2637,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DimensionAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > DimensionAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Dimension > DimensionAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionAttribute">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionAttribute">
 +<xsd:complexType name="DimensionAttribute">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -2278,8 +2893,8 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +          </xsd:restriction>
 +        </xsd:simpleType>
 +      </xsd:element>
-+      <xsd:element name="AttributeHierarchyProcessingState" 
-+                   type="eng300:AttributeHierarchyProcessingState" 
++      <xsd:element name="AttributeHierarchyProcessingState"
++                   type="eng300:AttributeHierarchyProcessingState"
 +                   minOccurs="0" >
 +        <xsd:simpleType>
 +          <xsd:restriction base="xsd:string" >
@@ -2289,13 +2904,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +          </xsd:restriction>
 +        </xsd:simpleType>
 +      </xsd:element>
-+      <xsd:element name ="VisualizationProperties" 
-+                   type="eng300:DimensionAttributeVisualizationProperties" 
++      <xsd:element name ="VisualizationProperties"
++                   type="eng300:DimensionAttributeVisualizationProperties"
 +                   minOccurs="0" maxOccurs="1"/>
 +      <xsd:element name ="ExtendedType" type="xsd:string" minOccurs="0" maxOccurs="1"/>
      </xsd:all>
 -  </xsd:complexType>+  </xsd:complexType>
-+           
++
 +  <xsd:simpleType name="DimensionAttributeTypeEnumType">
 +    <xsd:restriction base="xsd:string" >
 +      <xsd:enumeration value="Account" />
@@ -2543,10 +3158,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `simpleType` **DimensionAttributeTypeEnumType**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > DimensionAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Dimension > DimensionAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,244 +1,436 @@-<xsd:simpleType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionAttributeTypeEnumType">
+--- definition/+++ spec/@@ -1,244 +1,436 @@-<xsd:simpleType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionAttributeTypeEnumType">
 -    <xsd:restriction base="xsd:string">
 -      <xsd:enumeration value="Account"/>
 -      <xsd:enumeration value="AccountName"/>
@@ -2962,8 +3583,8 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +          </xsd:restriction>
 +        </xsd:simpleType>
 +      </xsd:element>
-+      <xsd:element name="AttributeHierarchyProcessingState" 
-+                   type="eng300:AttributeHierarchyProcessingState" 
++      <xsd:element name="AttributeHierarchyProcessingState"
++                   type="eng300:AttributeHierarchyProcessingState"
 +                   minOccurs="0" >
 +        <xsd:simpleType>
 +          <xsd:restriction base="xsd:string" >
@@ -2973,13 +3594,13 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +          </xsd:restriction>
 +        </xsd:simpleType>
 +      </xsd:element>
-+      <xsd:element name ="VisualizationProperties" 
-+                   type="eng300:DimensionAttributeVisualizationProperties" 
++      <xsd:element name ="VisualizationProperties"
++                   type="eng300:DimensionAttributeVisualizationProperties"
 +                   minOccurs="0" maxOccurs="1"/>
 +      <xsd:element name ="ExtendedType" type="xsd:string" minOccurs="0" maxOccurs="1"/>
 +    </xsd:all>
 +  </xsd:complexType>
-+           
++
 +  <xsd:simpleType name="DimensionAttributeTypeEnumType">
 +    <xsd:restriction base="xsd:string" >
 +      <xsd:enumeration value="Account" />
@@ -3227,10 +3848,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AttributeRelationship**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > DimensionAttribute > AttributeRelationship
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Dimension > DimensionAttribute > AttributeRelationship
 
 ```diff
---- definition/+++ spec/@@ -1,51 +1,53 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeRelationship">
+--- definition/+++ spec/@@ -1,51 +1,53 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeRelationship">
 +<xsd:complexType name="AttributeRelationship">
      <xsd:all>
 -      <xsd:element name="AttributeID" type="xsd:string"/>
@@ -3306,10 +3933,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Level**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Hierarchy > Level
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Dimension > Hierarchy > Level
 
 ```diff
---- definition/+++ spec/@@ -1,31 +1,33 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Level">
+--- definition/+++ spec/@@ -1,31 +1,33 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Level">
 +<xsd:complexType name="Level">
      <xsd:all>
 -      <xsd:element name="Name" type="xsd:string"/>
@@ -3356,10 +3989,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Annotation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Dimension > Relationship
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Dimension > Relationship
 
 ```diff
---- definition/+++ spec/@@ -1,14 +1,80 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Annotation">
+--- definition/+++ spec/@@ -1,14 +1,80 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Annotation">
 +<xsd:complexType name="Relationship">
 +    <xsd:sequence>
 +      <xsd:element name ="ID" type="xsd:string" />
@@ -3368,7 +4007,7 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +      <xsd:element name="ToRelationshipEnd" type="eng300_300:RelationshipEnd" />
 +    </xsd:sequence>
 +  </xsd:complexType>
-+           
++
 +  <xsd:complexType name="RelationshipEnd">
 +    <xsd:sequence>
 +      <xsd:element name="Role" type="xsd:string"/>
@@ -3402,12 +4041,12 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +          </xsd:sequence>
 +        </xsd:complexType>
 +      </xsd:element>
-+      <xsd:element name="VisualizationProperties"              
-+                         type="eng300:RelationshipEndVisualizationProperties" 
++      <xsd:element name="VisualizationProperties"
++                         type="eng300:RelationshipEndVisualizationProperties"
 +                         minOccurs="0" maxOccurs="1" />
 +    </xsd:sequence>
 +  </xsd:complexType>
-+           
++
 +  <xsd:complexType name="RelationshipEndTranslation">
 +    <xsd:all>
 +      <xsd:element name="Language" type="xsd:unsignedInt"/>
@@ -3418,14 +4057,14 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +      <xsd:element name="Annotations"   minOccurs="0">
 +        <xsd:complexType>
 +          <xsd:sequence>
-+            <xsd:element name="Annotation" type="eng300_300:Annotation" 
++            <xsd:element name="Annotation" type="eng300_300:Annotation"
 +                         minOccurs="0" maxOccurs="unbounded"/>
 +          </xsd:sequence>
 +        </xsd:complexType>
 +      </xsd:element>
 +    </xsd:all>
 +  </xsd:complexType>
-+           
++
 +  <xsd:complexType name="Annotation">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -3447,10 +4086,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > CubeDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > CubeDimension
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimension">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimension">
 +<xsd:complexType name="CubeDimension">
      <xsd:all>
        <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
@@ -3530,10 +4175,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > CubeAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > CubeAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,21 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeAttribute">
+--- definition/+++ spec/@@ -1,21 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeAttribute">
 +<xsd:complexType name="CubeAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -3575,10 +4226,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeHierarchy**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > CubeHierarchy
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > CubeHierarchy
 
 ```diff
---- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeHierarchy">
+--- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeHierarchy">
 +<xsd:complexType name="CubeHierarchy">
      <xsd:all>
        <xsd:element name="HierarchyID" type="xsd:string"/>
@@ -3605,10 +4262,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Kpi**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Kpi
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Kpi
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Kpi">
+--- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Kpi">
 +<xsd:complexType name="Kpi">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -3641,17 +4304,29 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Action**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Action" abstract="true"/>+<xsd:complexType name="Action" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Action" abstract="true"/>+<xsd:complexType name="Action" abstract="true" />
 ```
 
 ##### `complexType` **StandardAction**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action > StandardAction
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action > StandardAction
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="StandardAction">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="StandardAction">
 +<xsd:complexType name="StandardAction">
      <xsd:complexContent>
        <xsd:extension base="Action">
@@ -3760,10 +4435,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ReportAction**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action > ReportAction
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action > ReportAction
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportAction">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportAction">
 +<xsd:complexType name="ReportAction">
      <xsd:complexContent>
        <xsd:extension base="Action">
@@ -3892,10 +4573,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ReportParameter**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action > ReportAction > ReportParameter
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action > ReportAction > ReportParameter
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportParameter">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportParameter">
 +<xsd:complexType name="ReportParameter">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -3904,10 +4591,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ReportFormatParameter**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action > ReportAction > ReportFormatParameter
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action > ReportAction > ReportFormatParameter
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportFormatParameter">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ReportFormatParameter">
 +<xsd:complexType name="ReportFormatParameter">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -3916,10 +4609,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DrillThroughAction**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Cube > Action > DrillThroughAction
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Cube > Action > DrillThroughAction
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DrillThroughAction">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DrillThroughAction">
 +<xsd:complexType name="DrillThroughAction">
      <xsd:complexContent>
        <xsd:extension base="Action">
@@ -4038,10 +4737,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MdxScript**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MdxScript
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MdxScript
 
 ```diff
---- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MdxScript">
+--- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MdxScript">
 +<xsd:complexType name="MdxScript">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -4090,10 +4795,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CalculationProperty**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MdxScript > CalculationProperty
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MdxScript > CalculationProperty
 
 ```diff
---- definition/+++ spec/@@ -1,19 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CalculationProperty">
+--- definition/+++ spec/@@ -1,19 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CalculationProperty">
 +<xsd:complexType name="CalculationProperty">
      <xsd:all>
        <xsd:element name="CalculationReference" type="xsd:string"/>
@@ -4122,18 +4833,24 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
        <xsd:element name="DisplayFolder" type="xsd:string" minOccurs="0"/>
        <xsd:element name="Language" type="xsd:integer" minOccurs="0"/>
 -      <xsd:element name="VisualizationProperties" type="eng300:CalculationPropertiesVisualizationProperties" minOccurs="0" maxOccurs="1"/>
-+      <xsd:element name ="VisualizationProperties" 
-+                         type="eng300:CalculationPropertiesVisualizationProperties" 
++      <xsd:element name ="VisualizationProperties"
++                         type="eng300:CalculationPropertiesVisualizationProperties"
 +                         minOccurs="0" maxOccurs="1"/>
      </xsd:all>
    </xsd:complexType>
 ```
 
 ##### `complexType` **Command**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MdxScript > Command
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MdxScript > Command
 
 ```diff
---- definition/+++ spec/@@ -1,37 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Command">
+--- definition/+++ spec/@@ -1,37 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Command">
 -    <xsd:choice>
 -      <xsd:element name="Statement" type="xsd:string" minOccurs="0"/>
 -      <xsd:element name="Create" type="Create" minOccurs="0"/>
@@ -4179,16 +4896,22 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +                         maxOccurs="unbounded"/>
 +          </xsd:sequence>
 +        </xsd:complexType>
-+      </xsd:element> 
++      </xsd:element>
 +    </xsd:all>
    </xsd:complexType>
 ```
 
 ##### `complexType` **MeasureGroup**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup
 
 ```diff
---- definition/+++ spec/@@ -1,75 +1,79 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroup">
+--- definition/+++ spec/@@ -1,75 +1,79 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroup">
 +<xsd:complexType name="MeasureGroup">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -4355,8 +5078,8 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
        </xsd:element>
      </xsd:all>
 -  </xsd:complexType>+  </xsd:complexType>
-+           
-+           
++
++
 +  <xsd:simpleType name="MeasureGroupStorageModeEnumType">
 +    <xsd:restriction base="xsd:string" >
 +      <xsd:enumeration value="Molap" />
@@ -4368,10 +5091,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `simpleType` **MeasureGroupStorageModeEnumType**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,138 @@-<xsd:simpleType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupStorageModeEnumType">
+--- definition/+++ spec/@@ -1,8 +1,138 @@-<xsd:simpleType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupStorageModeEnumType">
 -    <xsd:restriction base="xsd:string">
 -      <xsd:enumeration value="Molap"/>
 -      <xsd:enumeration value="Rolap"/>
@@ -4505,8 +5234,8 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 +      </xsd:element>
 +    </xsd:all>
 +  </xsd:complexType>
-+           
-+           
++
++
 +  <xsd:simpleType name="MeasureGroupStorageModeEnumType">
 +    <xsd:restriction base="xsd:string" >
 +      <xsd:enumeration value="Molap" />
@@ -4518,17 +5247,30 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MeasureGroupDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupDimension" abstract="true"/>+<xsd:complexType name="MeasureGroupDimension" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupDimension" abstract="true"/>+<xsd:complexType name="MeasureGroupDimension" abstract="true" />
 ```
 
 ##### `complexType` **ManyToManyMeasureGroupDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > ManyToManyMeasureGroupDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > ManyToManyMeasureGroupDimension
 
 ```diff
---- definition/+++ spec/@@ -1,21 +1,23 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ManyToManyMeasureGroupDimension">
+--- definition/+++ spec/@@ -1,21 +1,23 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ManyToManyMeasureGroupDimension">
 +<xsd:complexType name="ManyToManyMeasureGroupDimension">
      <xsd:complexContent>
        <xsd:extension base="MeasureGroupDimension">
@@ -4560,10 +5302,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **RegularMeasureGroupDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > RegularMeasureGroupDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > RegularMeasureGroupDimension
 
 ```diff
---- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RegularMeasureGroupDimension">
+--- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RegularMeasureGroupDimension">
 +<xsd:complexType name="RegularMeasureGroupDimension">
      <xsd:complexContent>
        <xsd:extension base="MeasureGroupDimension">
@@ -4613,10 +5361,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `element` **ShareDimensionStorage**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > DegenerateMeasureGroupDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > DegenerateMeasureGroupDimension
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ShareDimensionStorage">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ShareDimensionStorage">
 +<xsd:element name="ShareDimensionStorage" >
      <xsd:simpleType>
 -      <xsd:restriction base="xsd:string">
@@ -4631,10 +5385,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataMiningMeasureGroupDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > DataMiningMeasureGroupDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupDimension > DataMiningMeasureGroupDimension
 
 ```diff
---- definition/+++ spec/@@ -1,20 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataMiningMeasureGroupDimension">
+--- definition/+++ spec/@@ -1,20 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataMiningMeasureGroupDimension">
 +<xsd:complexType name="DataMiningMeasureGroupDimension">
      <xsd:complexContent>
        <xsd:extension base="MeasureGroupDimension">
@@ -4666,10 +5426,19 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MeasureGroupAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > MeasureGroupAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,25 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupAttribute">
+--- definition/+++ spec/@@ -1,25 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921"
+    xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+    xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupAttribute">
 +<xsd:complexType name="MeasureGroupAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -4706,10 +5475,23 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Measure**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MeasureGroup > Measure
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MeasureGroup > Measure
 
 ```diff
---- definition/+++ spec/@@ -1,48 +1,48 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Measure">
+--- definition/+++ spec/@@ -1,48 +1,48 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty"
+xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Measure">
 +<xsd:complexType name="Measure">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -4810,10 +5592,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationDesign**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign
 
 ```diff
---- definition/+++ spec/@@ -1,34 +1,38 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesign">
+--- definition/+++ spec/@@ -1,34 +1,38 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesign">
 +<xsd:complexType name="AggregationDesign">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -4867,10 +5655,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationDesignDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign > AggregationDesignDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign > AggregationDesignDimension
 
 ```diff
---- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesignDimension">
+--- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesignDimension">
 +<xsd:complexType name="AggregationDesignDimension">
      <xsd:all>
        <xsd:element name="CubeDimensionID" type="xsd:string"/>
@@ -4896,10 +5690,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationDesignAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign > AggregationDesignDimension > AggregationDesignAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign > AggregationDesignDimension > AggregationDesignAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesignAttribute">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDesignAttribute">
 +<xsd:complexType name="AggregationDesignAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -4908,10 +5708,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Aggregation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign > Aggregation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign > Aggregation
 
 ```diff
---- definition/+++ spec/@@ -1,18 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Aggregation">
+--- definition/+++ spec/@@ -1,18 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Aggregation">
 +<xsd:complexType name="Aggregation">
      <xsd:all>
        <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
@@ -4938,10 +5744,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign > Aggregation > AggregationDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign > Aggregation > AggregationDimension
 
 ```diff
---- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDimension">
+--- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationDimension">
 +<xsd:complexType name="AggregationDimension">
      <xsd:all>
        <xsd:element name="CubeDimensionID" type="xsd:string"/>
@@ -4967,10 +5779,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > AggregationDesign > Aggregation > AggregationDimension > AggregationAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > AggregationDesign > Aggregation > AggregationDimension > AggregationAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationAttribute">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationAttribute">
 +<xsd:complexType name="AggregationAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -4987,10 +5805,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationInstance**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition > AggregationInstance
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Partition > AggregationInstance
 
 ```diff
---- definition/+++ spec/@@ -1,35 +1,38 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstance">
+--- definition/+++ spec/@@ -1,35 +1,38 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstance">
 +<xsd:complexType name="AggregationInstance">
      <xsd:all>
        <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
@@ -5042,10 +5866,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationInstanceDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceDimension
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceDimension">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceDimension">
 +<xsd:complexType name="AggregationInstanceDimension">
      <xsd:all>
        <xsd:element name="CubeDimensionID" type="xsd:string"/>
@@ -5062,10 +5892,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationInstanceAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceAttribute">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceAttribute">
 +<xsd:complexType name="AggregationInstanceAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -5083,10 +5919,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AggregationInstanceMeasure**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceMeasure
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Partition > AggregationInstance > AggregationInstanceMeasure
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceMeasure">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AggregationInstanceMeasure">
 +<xsd:complexType name="AggregationInstanceMeasure">
      <xsd:all>
        <xsd:element name="MeasureID" type="xsd:string"/>
@@ -5097,10 +5939,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Perspective**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective
 
 ```diff
---- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Perspective">
+--- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Perspective">
 +<xsd:complexType name="Perspective">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -5185,10 +6033,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveDimension**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension
 
 ```diff
---- definition/+++ spec/@@ -1,24 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveDimension">
+--- definition/+++ spec/@@ -1,24 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveDimension">
 +<xsd:complexType name="PerspectiveDimension">
      <xsd:all>
        <xsd:element name="CubeDimensionID" type="xsd:string"/>
@@ -5223,10 +6077,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveAttribute**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension > PerspectiveAttribute
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension > PerspectiveAttribute
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveAttribute">
+--- definition/+++ spec/@@ -1,12 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveAttribute">
 +<xsd:complexType name="PerspectiveAttribute">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -5247,10 +6107,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveHierarchy**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension > PerspectiveHierarchy
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveDimension > PerspectiveHierarchy
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveHierarchy">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveHierarchy">
 +<xsd:complexType name="PerspectiveHierarchy">
      <xsd:all>
        <xsd:element name="HierarchyID" type="xsd:string"/>
@@ -5267,10 +6133,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveMeasureGroup**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveMeasureGroup
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveMeasureGroup
 
 ```diff
---- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveMeasureGroup">
+--- definition/+++ spec/@@ -1,17 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveMeasureGroup">
 +<xsd:complexType name="PerspectiveMeasureGroup">
      <xsd:all>
        <xsd:element name="MeasureGroupID" type="xsd:string"/>
@@ -5296,10 +6168,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveMeasure**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveMeasureGroup > PerspectiveMeasure
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveMeasureGroup > PerspectiveMeasure
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveMeasure">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveMeasure">
 +<xsd:complexType name="PerspectiveMeasure">
      <xsd:all>
        <xsd:element name="MeasureID" type="xsd:string"/>
@@ -5316,10 +6194,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveCalculation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveCalculation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveCalculation
 
 ```diff
---- definition/+++ spec/@@ -1,18 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveCalculation">
+--- definition/+++ spec/@@ -1,18 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveCalculation">
 +<xsd:complexType name="PerspectiveCalculation">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -5348,10 +6232,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveKpi**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveKpi
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveKpi
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveKpi">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveKpi">
 +<xsd:complexType name="PerspectiveKpi">
      <xsd:all>
        <xsd:element name="KpiID" type="xsd:string"/>
@@ -5368,10 +6258,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **PerspectiveAction**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Perspective > PerspectiveAction
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Perspective > PerspectiveAction
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveAction">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PerspectiveAction">
 +<xsd:complexType name="PerspectiveAction">
      <xsd:all>
        <xsd:element name="ActionID" type="xsd:string"/>
@@ -5388,17 +6284,30 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MiningStructureColumn**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningStructureColumn" abstract="true"/>+<xsd:complexType name="MiningStructureColumn" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningStructureColumn" abstract="true"/>+<xsd:complexType name="MiningStructureColumn" abstract="true" />
 ```
 
 ##### `complexType` **ScalarMiningStructureColumn**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn > ScalarMiningStructureColumn
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn > ScalarMiningStructureColumn
 
 ```diff
---- definition/+++ spec/@@ -1,60 +1,63 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ScalarMiningStructureColumn">
+--- definition/+++ spec/@@ -1,60 +1,63 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ScalarMiningStructureColumn">
 +<xsd:complexType name="ScalarMiningStructureColumn">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -5516,10 +6425,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TableMiningStructureColumn**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn > TableMiningStructureColumn
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningStructure > MiningStructureColumn > TableMiningStructureColumn
 
 ```diff
---- definition/+++ spec/@@ -1,24 +1,28 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableMiningStructureColumn">
+--- definition/+++ spec/@@ -1,24 +1,28 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableMiningStructureColumn">
 +<xsd:complexType name="TableMiningStructureColumn">
      <xsd:all>
        <xsd:element name="ForeignKeyColumns" minOccurs="0">
@@ -5556,10 +6471,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MiningModel**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModel
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModel
 
 ```diff
---- definition/+++ spec/@@ -1,31 +1,32 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModel">
+--- definition/+++ spec/@@ -1,31 +1,32 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModel">
 +<xsd:complexType name="MiningModel">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -5668,10 +6589,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MiningModelingFlag**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModel > MiningModelingFlag
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModel > MiningModelingFlag
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelingFlag">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelingFlag">
 +<xsd:complexType name="MiningModelingFlag">
      <xsd:all>
 -      <xsd:element name="ModelingFlag" type="xsd:string"/>
@@ -5681,10 +6608,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MiningModelColumn**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModel > MiningModelColumn
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModel > MiningModelColumn
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelColumn">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelColumn">
 +<xsd:complexType name="MiningModelColumn">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -5745,10 +6678,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AlgorithmParameter**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModel > AlgorithmParameter
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModel > AlgorithmParameter
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AlgorithmParameter">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AlgorithmParameter">
 +<xsd:complexType name="AlgorithmParameter">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -5759,10 +6698,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **FoldingParameters**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModel > FoldingParameters
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModel > FoldingParameters
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="FoldingParameters">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="FoldingParameters">
 +<xsd:complexType name="FoldingParameters">
      <xsd:all>
 -      <xsd:element name="FoldIndex" type="xsd:integer"/>
@@ -5776,10 +6721,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Annotation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation
 
 ```diff
---- definition/+++ spec/@@ -1,14 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Annotation">
+--- definition/+++ spec/@@ -1,14 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Annotation">
 +<xsd:complexType name="Annotation">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -5801,10 +6752,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **LinguisticSchemas**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="LinguisticSchemas">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="LinguisticSchemas">
 +<xsd:complexType name="LinguisticSchemas">
      <xsd:sequence>
 -      <xsd:element name="LinguisticSchema" type="LinguisticSchema" minOccurs="1"/>
@@ -5814,10 +6771,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **LinguisticSchema**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="LinguisticSchema">
+--- definition/+++ spec/@@ -1,6 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="LinguisticSchema">
 +<xsd:complexType name="LinguisticSchema">
      <xsd:sequence>
 -      <xsd:element name="Entities" type="EntitiesType" minOccurs="0" maxOccurs="1"/>
@@ -5835,10 +6798,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **EntitiesType**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EntitiesType">
+--- definition/+++ spec/@@ -1,5 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EntitiesType">
 +<xsd:complexType name="LinguisticSchema">
      <xsd:sequence>
 -      <xsd:element name="Entity" type="EntityType" minOccurs="1"/>
@@ -5855,10 +6824,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **EntityType**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema > Entity
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema > Entity
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EntityType">
+--- definition/+++ spec/@@ -1,8 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EntityType">
 +<xsd:complexType name="EntityType">
      <xsd:sequence>
 -      <xsd:element name="Words" type="WordsType" minOccurs="0" maxOccurs="1"/>
@@ -5880,10 +6855,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **WordsType**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema > Entity
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Annotation > LinguisticSchemas Annotation > LinguisticSchema > Entity
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="WordsType">
+--- definition/+++ spec/@@ -1,5 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="WordsType">
 +<xsd:complexType name="EntityType">
      <xsd:sequence>
 -      <xsd:element name="Word" type="xsd:token" minOccurs="1"/>
@@ -5902,10 +6883,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Translation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Translation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Translation
 
 ```diff
---- definition/+++ spec/@@ -1,13 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Translation">
+--- definition/+++ spec/@@ -1,13 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Translation">
 +<xsd:complexType name="Translation">
      <xsd:all>
        <xsd:element name="Language" type="xsd:unsignedInt"/>
@@ -5926,10 +6913,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AttributeTranslation**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Translation > AttributeTranslation
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Translation > AttributeTranslation
 
 ```diff
---- definition/+++ spec/@@ -1,17 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeTranslation">
+--- definition/+++ spec/@@ -1,17 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeTranslation">
 +<xsd:complexType name="AttributeTranslation">
      <xsd:all>
        <xsd:element name="Language" type="xsd:unsignedInt"/>
@@ -5955,10 +6948,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataItem**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataItem
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataItem
 
 ```diff
---- definition/+++ spec/@@ -1,23 +1,23 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataItem">
+--- definition/+++ spec/@@ -1,23 +1,23 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataItem">
 +<xsd:complexType name="DataItem">
      <xsd:all>
        <xsd:element name="DataType">
@@ -6074,17 +7073,30 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Binding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ColumnBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ColumnBinding
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Binding" abstract="true"/>+<xsd:complexType name="Binding" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Binding" abstract="true"/>+<xsd:complexType name="Binding" abstract="true" />
 ```
 
 ##### `complexType` **ColumnBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ColumnBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ColumnBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ColumnBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ColumnBinding">
 +<xsd:complexType name="ColumnBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6093,10 +7105,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **RowBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > RowBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > RowBinding
 
 ```diff
---- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RowBinding">
+--- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RowBinding">
 +<xsd:complexType name="RowBinding">
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6110,10 +7128,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataSourceViewBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > DataSourceViewBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > DataSourceViewBinding
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourceViewBinding">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourceViewBinding">
 +<xsd:complexType name="DataSourceViewBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6127,10 +7151,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MeasureBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > MeasureBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > MeasureBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureBinding">
 +<xsd:complexType name="MeasureBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6139,10 +7169,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AttributeBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > AttributeBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > AttributeBinding
 
 ```diff
---- definition/+++ spec/@@ -1,20 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeBinding">
+--- definition/+++ spec/@@ -1,20 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributeBinding">
 +<xsd:complexType name="AttributeBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6178,10 +7214,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **UserDefinedGroupBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > UserDefinedGroupBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > UserDefinedGroupBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="UserDefinedGroupBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="UserDefinedGroupBinding">
 +<xsd:complexType name="UserDefinedGroupBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6199,10 +7241,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Group**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > UserDefinedGroupBinding > Group
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > UserDefinedGroupBinding > Group
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Group">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Group">
 +<xsd:complexType name="Group">
      <xsd:all>
        <xsd:element name="Name" type="xsd:string"/>
@@ -6220,10 +7268,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeAttributeBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > CubeAttributeBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > CubeAttributeBinding
 
 ```diff
---- definition/+++ spec/@@ -1,29 +1,30 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeAttributeBinding">
+--- definition/+++ spec/@@ -1,29 +1,30 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeAttributeBinding">
 +<xsd:complexType name="CubeAttributeBinding" >
      <xsd:complexContent>
 -      <xsd:extension base="Binding">
@@ -6271,10 +7325,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DimensionBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > DimensionBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > DimensionBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DimensionBinding">
 +<xsd:complexType name="DimensionBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6311,10 +7371,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeDimensionBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > CubeDimensionBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > CubeDimensionBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimensionBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimensionBinding">
 +<xsd:complexType name="CubeDimensionBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6323,10 +7389,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MeasureGroupBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > MeasureGroupBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > MeasureGroupBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupBinding">
 +<xsd:complexType name="MeasureGroupBinding">
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6367,10 +7439,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MeasureGroupDimensionBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > MeasureGroupDimensionBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > MeasureGroupDimensionBinding
 
 ```diff
---- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupDimensionBinding">
+--- definition/+++ spec/@@ -1,9 +1,9 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MeasureGroupDimensionBinding">
 +<xsd:complexType name="MeasureGroupDimensionBinding">
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6384,10 +7462,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TimeBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > TimeBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > TimeBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TimeBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TimeBinding">
 +<xsd:complexType name="TimeBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6505,10 +7589,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TimeAttributeBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > InheritedBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > InheritedBinding
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TimeAttributeBinding">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TimeAttributeBinding">
 +<xsd:complexType name="TimeAttributeBinding" >
      <xsd:complexContent>
 -      <xsd:extension base="Binding"/>
@@ -6518,10 +7608,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **InheritedBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > TabularBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > TabularBinding
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="InheritedBinding">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="InheritedBinding">
 +<xsd:complexType name="InheritedBinding">
      <xsd:complexContent>
 -      <xsd:extension base="Binding"/>
@@ -6531,17 +7627,30 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TabularBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > TableBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > TableBinding
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TabularBinding" abstract="true"/>+<xsd:complexType name="TabularBinding" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TabularBinding" abstract="true"/>+<xsd:complexType name="TabularBinding" abstract="true" />
 ```
 
 ##### `complexType` **TableBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > TableBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > TableBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableBinding">
 +<xsd:complexType name="TableBinding" >
      <xsd:complexContent>
        <xsd:extension base="TabularBinding">
@@ -6550,10 +7659,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **QueryBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > QueryBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > QueryBinding
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="QueryBinding">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="QueryBinding">
 +<xsd:complexType name="QueryBinding" >
      <xsd:complexContent>
        <xsd:extension base="TabularBinding">
@@ -6562,24 +7677,44 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ProactiveCachingBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingObjectNotificationBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingObjectNotificationBinding
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingBinding" abstract="true"/>+<xsd:complexType name="ProactiveCachingBinding" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingBinding" abstract="true"/>+<xsd:complexType name="ProactiveCachingBinding" abstract="true" />
 ```
 
 ##### `complexType` **ProactiveCachingObjectNotificationBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingObjectNotificationBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingObjectNotificationBinding
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingObjectNotificationBinding" abstract="true"/>+<xsd:complexType name="ProactiveCachingObjectNotificationBinding" abstract="true" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingObjectNotificationBinding" abstract="true"/>+<xsd:complexType name="ProactiveCachingObjectNotificationBinding" abstract="true" />
 ```
 
 ##### `complexType` **ProactiveCachingInheritedBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingInheritedBinding">
+--- definition/+++ spec/@@ -1,12 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingInheritedBinding">
 +<xsd:complexType name="ProactiveCachingInheritedBinding" >
      <xsd:complexContent>
        <xsd:extension base="ProactiveCachingObjectNotificationBinding">
@@ -6599,10 +7734,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ProactiveCachingTablesBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding
 
 ```diff
---- definition/+++ spec/@@ -1,19 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingTablesBinding">
+--- definition/+++ spec/@@ -1,19 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingTablesBinding">
 +<xsd:complexType name="ProactiveCachingTablesBinding" >
      <xsd:complexContent>
        <xsd:extension base="ProactiveCachingObjectNotificationBinding">
@@ -6632,10 +7773,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **TableNotification**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding > TableNotification
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingTablesBinding > TableNotification
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableNotification">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TableNotification">
 +<xsd:complexType name="TableNotification">
      <xsd:all>
        <xsd:element name="DbTableName" type="xsd:string"/>
@@ -6644,10 +7791,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ProactiveCachingQueryBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingQueryBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingQueryBinding
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingQueryBinding">
+--- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingQueryBinding">
 +<xsd:complexType name="ProactiveCachingQueryBinding" >
      <xsd:complexContent>
        <xsd:extension base="ProactiveCachingBinding">
@@ -6668,10 +7821,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **QueryNotification**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingQueryBinding > QueryNotification
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingQueryBinding > QueryNotification
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="QueryNotification">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="QueryNotification">
 +<xsd:complexType name="QueryNotification">
      <xsd:all>
        <xsd:element name="Query" type="xsd:string"/>
@@ -6680,10 +7839,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ProactiveCachingIncrementalProcessingBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingIncrementalProcessingBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingIncrementalProcessingBinding
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingIncrementalProcessingBinding">
+--- definition/+++ spec/@@ -1,12 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCachingIncrementalProcessingBinding">
 +<xsd:complexType name="ProactiveCachingIncrementalProcessingBinding" >
      <xsd:complexContent>
        <xsd:extension base="ProactiveCachingBinding">
@@ -6705,10 +7870,17 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **IncrementalProcessingNotification**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > ProactiveCachingIncrementalProcessingBinding > IncrementalProcessingNotification
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > ProactiveCachingIncrementalProcessingBinding >
+IncrementalProcessingNotification
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="IncrementalProcessingNotification">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="IncrementalProcessingNotification">
 +<xsd:complexType name="IncrementalProcessingNotification">
      <xsd:all>
        <xsd:element name="TableID" type="xsd:string"/>
@@ -6717,10 +7889,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CalculatedMeasureBinding**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Binding > CalculatedMeasureBinding
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Binding > CalculatedMeasureBinding
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CalculatedMeasureBinding">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CalculatedMeasureBinding">
 +<xsd:complexType name="CalculatedMeasureBinding" >
      <xsd:complexContent>
        <xsd:extension base="Binding">
@@ -6734,10 +7912,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Permission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Permission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Permission
 
 ```diff
---- definition/+++ spec/@@ -1,35 +1,44 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Permission">
+--- definition/+++ spec/@@ -1,35 +1,44 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Permission">
 +<xsd:complexType name="Permission">
      <xsd:sequence>
 -      <!--These elements are common to each MajorObject -->
@@ -6802,10 +7986,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubeDimensionPermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Permission > CubeDimensionPermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Permission > CubeDimensionPermission
 
 ```diff
---- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimensionPermission">
+--- definition/+++ spec/@@ -1,34 +1,36 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubeDimensionPermission">
 +<xsd:complexType name="CubeDimensionPermission">
      <xsd:all>
        <xsd:element name="CubeDimensionID" type="xsd:string"/>
@@ -6854,10 +8044,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **AttributePermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Permission > AttributePermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Permission > AttributePermission
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributePermission">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AttributePermission">
 +<xsd:complexType name="AttributePermission">
      <xsd:all>
        <xsd:element name="AttributeID" type="xsd:string"/>
@@ -6875,10 +8071,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CellPermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Permission > CellPermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Permission > CellPermission
 
 ```diff
---- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CellPermission">
+--- definition/+++ spec/@@ -1,11 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CellPermission">
 +<xsd:complexType name="CellPermission">
      <xsd:all>
 -      <xsd:element name="Access">
@@ -6908,10 +8110,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DatabasePermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DatabasePermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DatabasePermission
 
 ```diff
---- definition/+++ spec/@@ -1,16 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DatabasePermission">
+--- definition/+++ spec/@@ -1,16 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DatabasePermission">
 +<xsd:complexType name="DatabasePermission">
      <xsd:complexContent>
        <xsd:extension base="Permission">
@@ -6934,10 +8142,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **DataSourcePermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DataSourcePermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DataSourcePermission
 
 ```diff
---- definition/+++ spec/@@ -1,16 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourcePermission">
+--- definition/+++ spec/@@ -1,16 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DataSourcePermission">
 +<xsd:complexType name="DataSourcePermission">
      <xsd:complexContent>
        <xsd:extension base="Permission">
@@ -6961,17 +8175,30 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `element` **AllowedRowsExpression**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > DimensionPermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > DimensionPermission
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AllowedRowsExpression" type="xsd:string"/>+<xsd:element name="AllowedRowsExpression" type="xsd:string" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+    xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="AllowedRowsExpression" type="xsd:string"/>+<xsd:element name="AllowedRowsExpression" type="xsd:string" />
 ```
 
 ##### `complexType` **MiningStructurePermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningStructurePermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningStructurePermission
 
 ```diff
---- definition/+++ spec/@@ -1,17 +1,17 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningStructurePermission">
+--- definition/+++ spec/@@ -1,17 +1,17 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningStructurePermission">
 +<xsd:complexType name="MiningStructurePermission">
      <xsd:complexContent>
        <xsd:extension base="Permission">
@@ -6996,10 +8223,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **MiningModelPermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > MiningModelPermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > MiningModelPermission
 
 ```diff
---- definition/+++ spec/@@ -1,19 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelPermission">
+--- definition/+++ spec/@@ -1,19 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MiningModelPermission">
 +<xsd:complexType name="MiningModelPermission">
      <xsd:complexContent>
        <xsd:extension base="Permission">
@@ -7027,10 +8260,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **CubePermission**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > CubePermission
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > CubePermission
 
 ```diff
---- definition/+++ spec/@@ -1,39 +1,42 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubePermission">
+--- definition/+++ spec/@@ -1,39 +1,42 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CubePermission">
 +<xsd:complexType name="CubePermission">
      <xsd:complexContent>
        <xsd:extension base="Permission">
@@ -7087,10 +8326,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Role**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Role
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Role
 
 ```diff
---- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Role">
+--- definition/+++ spec/@@ -1,23 +1,25 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Role">
 +<xsd:complexType name="Role">
      <xsd:all>
 -      <!--These elements are common to each MajorObject -->
@@ -7130,10 +8375,16 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Member**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > Role > Member
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > Role > Member
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Member">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Member">
 +<xsd:complexType name="Member">
      <xsd:all>
        <xsd:element name="Name" minOccurs="0" type="xsd:string"/>
@@ -7142,10 +8393,21 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **ProactiveCaching**
-Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type Definitions for Server Object Hierarchy > ProactiveCaching
+
+Spec location: Messages > Common Message Syntax > Complex Types > Object Definition Complex Types > Complex Type
+Definitions for Server Object Hierarchy > ProactiveCaching
 
 ```diff
---- definition/+++ spec/@@ -1,26 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCaching">
+--- definition/+++ spec/@@ -1,26 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+ xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+     xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ProactiveCaching">
 +<xsd:complexType name="ProactiveCaching">
      <xsd:all>
        <xsd:element name="OnlineMode" minOccurs="0">
@@ -7185,10 +8447,23 @@ Spec location: Messages > Common Message Syntax > Complex Types > Object Definit
 ```
 
 ##### `complexType` **Trace_Definition_ProviderInfo**
-Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types > Trace_Definition_ProviderInfo
+
+Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types >
+Trace_Definition_ProviderInfo
 
 ```diff
---- definition/+++ spec/@@ -1,20 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Definition_ProviderInfo">
+--- definition/+++ spec/@@ -1,20 +1,20 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty"
+xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Definition_ProviderInfo">
 +<xsd:complexType name="Trace_Definition_ProviderInfo" >
      <xsd:sequence>
 -      <xsd:element name="Data">
@@ -7221,10 +8496,22 @@ Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinitio
 ```
 
 ##### `complexType` **Trace_Event_Categories**
+
 Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types > Trace_Event_Categories
 
 ```diff
---- definition/+++ spec/@@ -1,18 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Event_Categories">
+--- definition/+++ spec/@@ -1,18 +1,19 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty"
+xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Event_Categories">
 +<xsd:complexType name="Trace_Event_Categories" >
      <xsd:sequence>
 -      <xsd:element name="Data">
@@ -7255,10 +8542,23 @@ Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinitio
 ```
 
 ##### `complexType` **TraceEvent**
-Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types > Trace_Event_Categories > TraceEvent
+
+Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types >
+Trace_Event_Categories > TraceEvent
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TraceEvent">
+--- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty"
+xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="TraceEvent">
 +<xsd:complexType name="TraceEvent" >
      <xsd:all>
 -      <xsd:element name="ID" type="xsd:integer"/>
@@ -7281,10 +8581,23 @@ Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinitio
 ```
 
 ##### `complexType` **EventColumn**
-Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types > Trace_Event_Categories > TraceEvent > EventColumn
+
+Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types >
+Trace_Event_Categories > TraceEvent > EventColumn
 
 ```diff
---- definition/+++ spec/@@ -1,14 +1,15 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EventColumn">
+--- definition/+++ spec/@@ -1,14 +1,15 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="EventColumn">
 +<xsd:complexType name="EventColumn" >
      <xsd:all>
 -      <xsd:element name="ID" type="xsd:integer"/>
@@ -7308,10 +8621,22 @@ Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinitio
 ```
 
 ##### `complexType` **Trace_Columns**
+
 Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinition Complex Types > Trace_Columns
 
 ```diff
---- definition/+++ spec/@@ -1,18 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Columns">
+--- definition/+++ spec/@@ -1,18 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Trace_Columns">
 +<xsd:complexType name="Trace_Columns" >
      <xsd:sequence>
        <xsd:element name="Data">
@@ -7341,10 +8666,23 @@ Spec location: Messages > Common Message Syntax > Complex Types > TraceDefinitio
 ```
 
 ##### `element` **Discover**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover >
+Elements > Discover
 
 ```diff
---- definition/+++ spec/@@ -1,99 +1,100 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Discover">
+--- definition/+++ spec/@@ -1,99 +1,100 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Discover">
 +<xsd:element name="Discover">
      <xsd:complexType>
        <xsd:sequence>
@@ -7506,7 +8844,7 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
            <xsd:complexType>
              <xsd:sequence>
 -              <xsd:element name="RestrictionList" minOccurs="0" maxOccurs="1" nillable="true">
-+              <xsd:element name="RestrictionList" minOccurs="0" maxOccurs="1" 
++              <xsd:element name="RestrictionList" minOccurs="0" maxOccurs="1"
 +                           nillable="true" >
                  <xsd:complexType>
                    <xsd:sequence>
@@ -7526,10 +8864,23 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **PropertyList**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > Discover > Properties Type > PropertyList
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover >
+Elements > Discover > Properties Type > PropertyList
 
 ```diff
---- definition/+++ spec/@@ -1,395 +1,435 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PropertyList">
+--- definition/+++ spec/@@ -1,395 +1,435 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="PropertyList">
 +<xsd:complexType name="PropertyList" >
      <xsd:all>
 -      <xsd:element name="DataSourceInfo" type="xsd:string" minOccurs="0"/>
@@ -7771,7 +9122,7 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 +            <xsd:enumeration value="Data" />
 +            <xsd:enumeration value="SchemaData" />
 +            <xsd:enumeration value="Metadata" />
-+           
++
 +          </xsd:restriction>
 +        </xsd:simpleType>
 +      </xsd:element>
@@ -8305,10 +9656,23 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `element` **DiscoverResponse**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover > Elements > DiscoverResponse > return Element
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Discover >
+Elements > DiscoverResponse > return Element
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DiscoverResponse">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DiscoverResponse">
 +<xsd:element name="DiscoverResponse">
      <xsd:complexType>
        <xsd:sequence>
@@ -8325,10 +9689,22 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Command**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element
 
 ```diff
---- definition/+++ spec/@@ -1,37 +1,37 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Command">
+--- definition/+++ spec/@@ -1,37 +1,37 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset"
+xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Command">
 +<xsd:complexType name="Command">
      <xsd:choice>
 -      <xsd:element name="Statement" type="xsd:string" minOccurs="0"/>
@@ -8402,10 +9778,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **ObjectReference**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > ObjectReference Type
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > ObjectReference Type
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ObjectReference">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ObjectReference">
 +<xsd:complexType name="ObjectReference">
      <xsd:all>
        <xsd:element name="ServerID" type="xsd:string" minOccurs="0"/>
@@ -8441,10 +9823,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Statement**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Statement
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Statement
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Statement">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Statement">
 +<xsd:complexType name="Statement" >
      <xsd:all>
 -      <xsd:element name="Statement" type="xsd:string" minOccurs="0"/>
@@ -8454,10 +9842,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Create**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Create
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Create
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Create">
+--- definition/+++ spec/@@ -1,8 +1,14 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Create">
 +<xsd:complexType name="Create">
      <xsd:all>
 -      <xsd:element name="ParentObject" type="ObjectReference" minOccurs="0"/>
@@ -8479,10 +9873,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Alter**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Alter
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Alter
 
 ```diff
---- definition/+++ spec/@@ -1,9 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Alter">
+--- definition/+++ spec/@@ -1,9 +1,22 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Alter">
 +<xsd:complexType name="Alter">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference" minOccurs="0"/>
@@ -8513,10 +9913,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Delete**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Delete
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Delete
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Delete">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Delete">
 +<xsd:complexType name="Delete">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -8528,10 +9934,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Process**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Process
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Process
 
 ```diff
---- definition/+++ spec/@@ -1,28 +1,44 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Process">
+--- definition/+++ spec/@@ -1,28 +1,44 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Process">
 +<xsd:complexType name="Process">
      <xsd:all>
 -      <xsd:element name="Type">
@@ -8599,10 +10011,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **OutOfLineBinding**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Process > OutOfLineBinding
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Process > OutOfLineBinding
 
 ```diff
---- definition/+++ spec/@@ -1,94 +1,95 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="OutOfLineBinding">
+--- definition/+++ spec/@@ -1,94 +1,95 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="OutOfLineBinding">
 +<xsd:complexType name="OutOfLineBinding" >
      <xsd:all>
 -      <xsd:element name="DatabaseID" minOccurs="0" type="xsd:string"/>
@@ -8735,10 +10153,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **MergePartitions**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > MergePartitions
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > MergePartitions
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MergePartitions">
+--- definition/+++ spec/@@ -1,12 +1,13 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="MergePartitions">
 +<xsd:complexType name="MergePartitions">
      <xsd:all>
 -      <xsd:element name="Sources">
@@ -8758,10 +10182,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **DesignAggregations**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > DesignAggregations
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > DesignAggregations
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DesignAggregations">
+--- definition/+++ spec/@@ -1,15 +1,16 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DesignAggregations">
 +<xsd:complexType name="DesignAggregations">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -8790,10 +10220,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **ClearCache**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > ClearCache
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > ClearCache
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClearCache">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClearCache">
 +<xsd:complexType name="ClearCache">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -8803,10 +10239,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Cancel**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Cancel
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Cancel
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Cancel">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Cancel">
 +<xsd:complexType name="Cancel">
      <xsd:all>
 -      <xsd:element name="ConnectionID" type="xsd:integer" minOccurs="0"/>
@@ -8822,17 +10264,29 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **BeginTransaction**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > BeginTransaction
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > BeginTransaction
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="BeginTransaction"/>+<xsd:complexType name="BeginTransaction" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="BeginTransaction"/>+<xsd:complexType name="BeginTransaction" />
 ```
 
 ##### `complexType` **CommitTransaction**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > CommitTransaction
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > CommitTransaction
 
 ```diff
---- definition/+++ spec/@@ -1,12 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CommitTransaction">
+--- definition/+++ spec/@@ -1,12 +1,12 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="CommitTransaction">
 -    <xsd:all>
 -      <xsd:element name="DurabilityGuarantee" minOccurs="0">
 -        <xsd:simpleType>
@@ -8858,17 +10312,29 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **RollbackTransaction**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > RollbackTransaction
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > RollbackTransaction
 
 ```diff
---- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RollbackTransaction"/>+<xsd:complexType name="RollbackTransaction" />
+--- definition/+++ spec/@@ -1 +1 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="RollbackTransaction"/>+<xsd:complexType name="RollbackTransaction" />
 ```
 
 ##### `complexType` **Lock**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Lock
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Lock
 
 ```diff
---- definition/+++ spec/@@ -1,18 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Lock">
+--- definition/+++ spec/@@ -1,18 +1,21 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Lock">
 +<xsd:complexType name="Lock">
      <xsd:all>
        <xsd:element name="ID">
@@ -8900,10 +10366,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Unlock**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Unlock
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Unlock
 
 ```diff
---- definition/+++ spec/@@ -1,9 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Unlock">
+--- definition/+++ spec/@@ -1,9 +1,10 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Unlock">
 +<xsd:complexType name="Unlock">
      <xsd:all>
        <xsd:element name="ID">
@@ -8919,10 +10391,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Backup**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Backup
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Backup
 
 ```diff
---- definition/+++ spec/@@ -1,24 +1,26 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Backup">
+--- definition/+++ spec/@@ -1,24 +1,26 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Backup">
 +<xsd:complexType name="Backup">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -8966,10 +10444,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Location_Backup**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Backup > Location_Backup
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Backup > Location_Backup
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Location_Backup">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Location_Backup">
 +<xsd:complexType name="Location_Backup">
      <xsd:all>
 -      <xsd:element name="File" type="xsd:string"/>
@@ -8981,10 +10465,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Location**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Restore > Location
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Restore > Location
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,26 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Location">
+--- definition/+++ spec/@@ -1,6 +1,26 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Location">
 +<xsd:complexType name="Location">
      <xsd:complexContent>
 -      <xsd:extension base="Location_Backup">
@@ -9016,10 +10506,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Folder**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Restore > Folder
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Restore > Folder
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Folder">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Folder">
 +<xsd:complexType name="Folder">
      <xsd:all>
 -      <xsd:element name="Original" type="xsd:string"/>
@@ -9031,10 +10527,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Source**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Synchronize > Source
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Synchronize > Source
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Source">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Source">
 +<xsd:complexType name="Source">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -9046,10 +10548,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Detach**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Detach
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Detach
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Detach">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Detach">
 +<xsd:complexType name="Detach">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -9061,10 +10569,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Insert**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Insert
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Insert
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Insert">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Insert">
 +<xsd:complexType name="Insert">
      <xsd:all>
 -      <xsd:element name="Object" type="Object"/>
@@ -9083,10 +10597,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Object**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Insert > Object
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Insert > Object
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Object">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Object">
 +<xsd:complexType name="Object">
      <xsd:all>
 -      <xsd:element name="Database" type="xsd:string"/>
@@ -9100,10 +10620,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Attribute_InsertUpdate**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Insert > Attribute_InsertUpdate
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Insert > Attribute_InsertUpdate
 
 ```diff
---- definition/+++ spec/@@ -1,25 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Attribute_InsertUpdate">
+--- definition/+++ spec/@@ -1,25 +1,27 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Attribute_InsertUpdate">
 +<xsd:complexType name="Attribute_InsertUpdate">
      <xsd:all>
 -      <xsd:element name="AttributeName" type="xsd:string"/>
@@ -9145,10 +10671,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Translation_InsertUpdate**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Insert > Translation_InsertUpdate
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Insert > Translation_InsertUpdate
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Translation_InsertUpdate">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Translation_InsertUpdate">
 +<xsd:complexType name="Translation_InsertUpdate">
      <xsd:all>
 -      <xsd:element name="Language" type="xsd:integer"/>
@@ -9160,10 +10692,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Update**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Update
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Update
 
 ```diff
---- definition/+++ spec/@@ -1,15 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Update">
+--- definition/+++ spec/@@ -1,15 +1,18 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Update">
 +<xsd:complexType name="Update">
      <xsd:all>
 -      <xsd:element name="Object" type="Object"/>
@@ -9191,10 +10729,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Where**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Update > Where
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Update > Where
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Where">
+--- definition/+++ spec/@@ -1,5 +1,5 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Where">
 +<xsd:complexType name="Where">
      <xsd:all>
 -      <xsd:element name="Attribute" type="Where_Attribute"/>
@@ -9204,10 +10748,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Where_Attribute**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Update > Where_Attribute
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Update > Where_Attribute
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Where_Attribute">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Where_Attribute">
 +<xsd:complexType name="Where_Attribute">
      <xsd:all>
 -      <xsd:element name="AttributeName" type="xsd:string"/>
@@ -9226,10 +10776,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Drop**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Drop
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Drop
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Drop">
+--- definition/+++ spec/@@ -1,7 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Drop">
 +<xsd:complexType name="Drop">
      <xsd:all>
 -      <xsd:element name="Object" type="Object"/>
@@ -9244,10 +10800,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **UpdateCells**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > UpdateCells
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > UpdateCells
 
 ```diff
---- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="UpdateCells">
+--- definition/+++ spec/@@ -1,5 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="UpdateCells">
 +<xsd:complexType name="UpdateCells">
      <xsd:sequence>
 -      <xsd:element name="Cell" type="Cell" minOccurs="0" maxOccurs="unbounded"/>
@@ -9258,10 +10820,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `element` **KeepResult**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > UpdateCells
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > UpdateCells
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="KeepResult">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="KeepResult">
 -    <xsd:complexType>
 +<xsd:element name="KeepResult" >
 +    <xsd:complexType >
@@ -9274,10 +10842,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `element` **Result**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > UpdateCells
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > UpdateCells
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Result">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Result">
 +<xsd:element name="Result" >
      <xsd:complexType>
        <xsd:sequence>
@@ -9289,10 +10863,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `element` **ClearResult**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > UpdateCells
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > UpdateCells
 
 ```diff
---- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClearResult">
+--- definition/+++ spec/@@ -1,7 +1,7 @@-<xsd:element xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ClearResult">
 +<xsd:element name="ClearResult" >
      <xsd:complexType>
        <xsd:sequence>
@@ -9304,10 +10884,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Cell**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > UpdateCells > Cell
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > UpdateCells > Cell
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Cell">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Cell">
 +<xsd:complexType name="Cell">
      <xsd:all>
 -      <xsd:element name="Value" type="xsd:anySimpleType"/>
@@ -9319,10 +10905,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **NotifyTableChange**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > NotifyTableChange
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > NotifyTableChange
 
 ```diff
---- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="NotifyTableChange">
+--- definition/+++ spec/@@ -1,10 +1,11 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="NotifyTableChange">
 +<xsd:complexType name="NotifyTableChange">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -9341,10 +10933,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **Batch**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > Batch
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > Batch
 
 ```diff
---- definition/+++ spec/@@ -1,49 +1,81 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Batch">
+--- definition/+++ spec/@@ -1,49 +1,81 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="Batch">
 +<xsd:complexType name="Batch">
      <xsd:sequence>
 -      <xsd:element name="Parallel" minOccurs="0" maxOccurs="unbounded">
@@ -9432,9 +11030,9 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 +                  maxOccurs="unbounded" />
 +      <xsd:element name="BeginTransaction" minOccurs="0" type="BeginTransaction"
 +                  maxOccurs="unbounded" />
-+      <xsd:element name="CommitTransaction" minOccurs="0" type="CommitTransaction" 
++      <xsd:element name="CommitTransaction" minOccurs="0" type="CommitTransaction"
 +                  maxOccurs="unbounded" />
-+      <xsd:element name="RollbackTransaction" minOccurs="0" type="RollbackTransaction" 
++      <xsd:element name="RollbackTransaction" minOccurs="0" type="RollbackTransaction"
 +                  maxOccurs="unbounded" />
 +      <xsd:element name="ClearCache" minOccurs="0" type="ClearCache"
 +                  maxOccurs="unbounded" />
@@ -9469,10 +11067,16 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **ImageSave**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > ImageSave
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > ImageSave
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ImageSave">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100"
+    xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300"
+    xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+    xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925"
+    xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ImageSave">
 +<xsd:complexType name="ImageSave">
      <xsd:all>
 -      <xsd:element name="Object" type="ObjectReference"/>
@@ -9484,10 +11088,23 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **DBCC**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Command Element > DBCC
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Command Element > DBCC
 
 ```diff
---- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DBCC">
+--- definition/+++ spec/@@ -1,4 +1,4 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty"
+xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="DBCC">
 +<xsd:complexType name="DBCC">
      <xsd:all>
        <xsd:element name="Object" type="ObjectReference" minOccurs="0" maxOccurs="1"/>
@@ -9496,10 +11113,23 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **ExecuteParameter**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > Execute > Parameters > ExecuteParameter
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+Execute > Parameters > ExecuteParameter
 
 ```diff
---- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ExecuteParameter">
+--- definition/+++ spec/@@ -1,6 +1,6 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="ExecuteParameter">
 +<xsd:complexType name="ExecuteParameter">
      <xsd:all>
 -      <xsd:element name="Name" minOccurs="1" type="xsd:string"/>
@@ -9511,10 +11141,23 @@ Spec location: Protocol Details > Server Details > Message Processing Events and
 ```
 
 ##### `complexType` **return**
-Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements > ExecuteResponse > return Element
+
+Spec location: Protocol Details > Server Details > Message Processing Events and Sequencing Rules > Execute > Elements >
+ExecuteResponse > return Element
 
 ```diff
---- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis" xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600" xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920" xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922" xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924" xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset" xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="return">
+--- definition/+++ spec/@@ -1,8 +1,8 @@-<xsd:complexType xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-analysis"
+xmlns:eng="http://schemas.microsoft.com/analysisservices/2003/engine" xmlns:eng2="http://schemas.microsoft.com/analysisservices/2003/engine/2"
+xmlns:eng100="http://schemas.microsoft.com/analysisservices/2008/engine/100" xmlns:eng100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100"
+xmlns:eng200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:eng200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200"
+xmlns:eng300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:eng300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300"
+xmlns:eng400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:eng600="http://schemas.microsoft.com/analysisservices/2013/engine/600"
+xmlns:eng800="http://schemas.microsoft.com/analysisservices/2013/engine/800" xmlns:eng920="http://schemas.microsoft.com/analysisservices/2022/engine/920"
+xmlns:eng921="http://schemas.microsoft.com/analysisservices/2022/engine/921" xmlns:eng922="http://schemas.microsoft.com/analysisservices/2022/engine/922"
+xmlns:eng923="http://schemas.microsoft.com/analysisservices/2025/engine/923" xmlns:eng924_924="http://schemas.microsoft.com/analysisservices/2025/engine/924/924"
+xmlns:eng925="http://schemas.microsoft.com/analysisservices/2025/engine/925" xmlns:ana-ds="urn:schemas-microsoft-com:xml-analysis:mddataset"
+xmlns:ana-rs="urn:schemas-microsoft-com:xml-analysis:rowset" xmlns:ana-e="urn:schemas-microsoft-com:xml-analysis:empty" xmlns:ana-m="http://schemas.microsoft.com/analysisservices/2003/xmla-multipleresults"
+xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" name="return">
 +<xsd:complexType name="return">
      <xsd:choice>
 -      <xsd:element ref="ana-ds:root"/>
